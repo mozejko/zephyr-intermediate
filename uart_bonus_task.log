@@ -1,0 +1,76 @@
+*** Booting Zephyr OS build v4.4.0 ***
+[00:00:00.000,000] <inf> homework: === L3 Homework: Polling to Workqueue ===
+[00:00:00.000,000] <inf> homework: Starter: polling every 10ms, sensor fires every 100ms
+[00:00:00.000,000] <inf> homework: Expected wasted wakeups: ~9 per event
+[00:00:00.000,000] <inf> homework: Run this, count wakeups, then convert to workqueue.
+[00:00:00.000,000] <inf> homework: [SENSOR] burst 0 start tick=0
+[00:00:00.000,000] <inf> homework: [SENSOR] burst event 0  tick=0
+[00:00:00.004,000] <inf> homework: [SENSOR] burst event 1  tick=4
+[00:00:00.008,000] <inf> homework: [SENSOR] burst event 2  tick=8
+[00:00:00.012,000] <inf> homework: [SENSOR] burst event 3  tick=12
+[00:00:00.016,000] <inf> homework: [SENSOR] burst event 4  tick=16
+[00:00:00.046,000] <inf> homework: [CONSUMER] processed event 1  tick=46
+[00:00:00.100,000] <inf> homework: [SENSOR] burst 1 start tick=100
+[00:00:00.100,000] <inf> homework: [SENSOR] burst event 0  tick=100
+[00:00:00.104,000] <inf> homework: [SENSOR] burst event 1  tick=104
+[00:00:00.108,000] <inf> homework: [SENSOR] burst event 2  tick=108
+[00:00:00.113,000] <inf> homework: [SENSOR] burst event 3  tick=113
+[00:00:00.117,000] <inf> homework: [SENSOR] burst event 4  tick=117
+[00:00:00.147,000] <inf> homework: [CONSUMER] processed event 2  tick=147
+[00:00:00.201,000] <inf> homework: [SENSOR] burst 2 start tick=201
+[00:00:00.201,000] <inf> homework: [SENSOR] burst event 0  tick=201
+[00:00:00.205,000] <inf> homework: [SENSOR] burst event 1  tick=205
+[00:00:00.209,000] <inf> homework: [SENSOR] burst event 2  tick=209
+[00:00:00.213,000] <inf> homework: [SENSOR] burst event 3  tick=213
+[00:00:00.217,000] <inf> homework: [SENSOR] burst event 4  tick=217
+[00:00:00.247,000] <inf> homework: [CONSUMER] processed event 3  tick=247
+[00:00:00.301,000] <inf> homework: [SENSOR] burst 3 start tick=301
+[00:00:00.301,000] <inf> homework: [SENSOR] burst event 0  tick=301
+[00:00:00.306,000] <inf> homework: [SENSOR] burst event 1  tick=306
+[00:00:00.310,000] <inf> homework: [SENSOR] burst event 2  tick=310
+[00:00:00.314,000] <inf> homework: [SENSOR] burst event 3  tick=314
+[00:00:00.318,000] <inf> homework: [SENSOR] burst event 4  tick=318
+[00:00:00.348,000] <inf> homework: [CONSUMER] processed event 4  tick=348
+[00:00:00.402,000] <inf> homework: [SENSOR] burst 4 start tick=402
+[00:00:00.402,000] <inf> homework: [SENSOR] burst event 0  tick=402
+[00:00:00.406,000] <inf> homework: [SENSOR] burst event 1  tick=406
+[00:00:00.410,000] <inf> homework: [SENSOR] burst event 2  tick=410
+[00:00:00.414,000] <inf> homework: [SENSOR] burst event 3  tick=414
+[00:00:00.418,000] <inf> homework: [SENSOR] burst event 4  tick=418
+[00:00:00.449,000] <inf> homework: [CONSUMER] processed event 5  tick=449
+[00:00:00.503,000] <inf> homework: [SENSOR] burst 5 start tick=503
+[00:00:00.503,000] <inf> homework: [SENSOR] burst event 0  tick=503
+[00:00:00.507,000] <inf> homework: [SENSOR] burst event 1  tick=507
+[00:00:00.511,000] <inf> homework: [SENSOR] burst event 2  tick=511
+[00:00:00.515,000] <inf> homework: [SENSOR] burst event 3  tick=515
+[00:00:00.519,000] <inf> homework: [SENSOR] burst event 4  tick=519
+[00:00:00.549,000] <inf> homework: [CONSUMER] processed event 6  tick=549
+[00:00:00.603,000] <inf> homework: [SENSOR] burst 6 start tick=603
+[00:00:00.603,000] <inf> homework: [SENSOR] burst event 0  tick=603
+[00:00:00.607,000] <inf> homework: [SENSOR] burst event 1  tick=607
+[00:00:00.611,000] <inf> homework: [SENSOR] burst event 2  tick=611
+[00:00:00.616,000] <inf> homework: [SENSOR] burst event 3  tick=616
+[00:00:00.620,000] <inf> homework: [SENSOR] burst event 4  tick=620
+[00:00:00.650,000] <inf> homework: [CONSUMER] processed event 7  tick=650
+[00:00:00.704,000] <inf> homework: [SENSOR] burst 7 start tick=704
+[00:00:00.704,000] <inf> homework: [SENSOR] burst event 0  tick=704
+[00:00:00.708,000] <inf> homework: [SENSOR] burst event 1  tick=708
+[00:00:00.712,000] <inf> homework: [SENSOR] burst event 2  tick=712
+[00:00:00.716,000] <inf> homework: [SENSOR] burst event 3  tick=716
+[00:00:00.720,000] <inf> homework: [SENSOR] burst event 4  tick=720
+[00:00:00.750,000] <inf> homework: [CONSUMER] processed event 8  tick=750
+[00:00:00.804,000] <inf> homework: [SENSOR] burst 8 start tick=804
+[00:00:00.804,000] <inf> homework: [SENSOR] burst event 0  tick=804
+[00:00:00.809,000] <inf> homework: [SENSOR] burst event 1  tick=809
+[00:00:00.813,000] <inf> homework: [SENSOR] burst event 2  tick=813
+[00:00:00.817,000] <inf> homework: [SENSOR] burst event 3  tick=817
+[00:00:00.821,000] <inf> homework: [SENSOR] burst event 4  tick=821
+[00:00:00.851,000] <inf> homework: [CONSUMER] processed event 9  tick=851
+[00:00:00.905,000] <inf> homework: [SENSOR] burst 9 start tick=905
+[00:00:00.905,000] <inf> homework: [SENSOR] burst event 0  tick=905
+[00:00:00.909,000] <inf> homework: [SENSOR] burst event 1  tick=909
+[00:00:00.913,000] <inf> homework: [SENSOR] burst event 2  tick=913
+[00:00:00.917,000] <inf> homework: [SENSOR] burst event 3  tick=917
+[00:00:00.921,000] <inf> homework: [SENSOR] burst event 4  tick=921
+[00:00:00.952,000] <inf> homework: [CONSUMER] processed event 10  tick=952
+[00:00:01.006,000] <inf> homework: [SENSOR] all events produced
