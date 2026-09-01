@@ -1,0 +1,26 @@
+*** Booting Zephyr OS build v4.4.0 ***
+[00:00:00.000,000] <inf> l3_task1: === L3 Homework: Polling to Workqueue ===
+[00:00:00.000,000] <inf> l3_task1: Starter: polling every 10ms, sensor fires every 100ms
+[00:00:00.000,000] <inf> l3_task1: Expected wasted wakeups: ~9 per event
+[00:00:00.000,000] <inf> l3_task1: Run this, count wakeups, then convert to workqueue.
+[00:00:00.100,000] <inf> l3_task1: [SENSOR] event 0  tick=100
+[00:00:00.100,000] <inf> l3_task1: [CONSUMER] processed event 1  tick=100
+[00:00:00.200,000] <inf> l3_task1: [SENSOR] event 1  tick=200
+[00:00:00.200,000] <inf> l3_task1: [CONSUMER] processed event 2  tick=200
+[00:00:00.300,000] <inf> l3_task1: [SENSOR] event 2  tick=300
+[00:00:00.300,000] <inf> l3_task1: [CONSUMER] processed event 3  tick=300
+[00:00:00.400,000] <inf> l3_task1: [SENSOR] event 3  tick=400
+[00:00:00.400,000] <inf> l3_task1: [CONSUMER] processed event 4  tick=400
+[00:00:00.500,000] <inf> l3_task1: [SENSOR] event 4  tick=500
+[00:00:00.500,000] <inf> l3_task1: [CONSUMER] processed event 5  tick=500
+[00:00:00.600,000] <inf> l3_task1: [SENSOR] event 5  tick=600
+[00:00:00.600,000] <inf> l3_task1: [CONSUMER] processed event 6  tick=600
+[00:00:00.700,000] <inf> l3_task1: [SENSOR] event 6  tick=700
+[00:00:00.700,000] <inf> l3_task1: [CONSUMER] processed event 7  tick=700
+[00:00:00.800,000] <inf> l3_task1: [SENSOR] event 7  tick=800
+[00:00:00.800,000] <inf> l3_task1: [CONSUMER] processed event 8  tick=800
+[00:00:00.901,000] <inf> l3_task1: [SENSOR] event 8  tick=901
+[00:00:00.901,000] <inf> l3_task1: [CONSUMER] processed event 9  tick=901
+[00:00:01.001,000] <inf> l3_task1: [SENSOR] event 9  tick=1001
+[00:00:01.001,000] <inf> l3_task1: [CONSUMER] processed event 10  tick=1001
+[00:00:01.001,000] <inf> l3_task1: [SENSOR] all events produced
