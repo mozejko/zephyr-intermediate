@@ -1,0 +1,53 @@
+*** Booting Zephyr OS build v4.4.0 ***
+[00:00:00.000,000] <inf> l4_task1: ======= Lecture 4: Zbus Event-Driven System =======
+[00:00:00.000,000] <inf> l4_task1: sensor publishes every 180 ms (15 events)
+[00:00:00.000,000] <inf> l4_task1: display listener = fast updates (publisher context)
+[00:00:00.000,000] <inf> l4_task1: logger subscriber = slower message-copy processing
+[00:00:00.000,000] <inf> l4_task1: ===================================================
+[00:00:00.000,000] <inf> l4_task1: [SENSOR] publish seq=0 temp=24971 mC
+[00:00:00.020,000] <inf> l4_task1: [DISPLAY-LIS] seq=0 temp=24971 mC tick=20
+[00:00:00.020,000] <inf> l4_task1: [LOGGER-MSG] seq=0 temp=24971 mC latency=20ms
+[00:00:00.200,000] <inf> l4_task1: [SENSOR] publish seq=1 temp=28045 mC
+[00:00:00.220,000] <inf> l4_task1: [DISPLAY-LIS] seq=1 temp=28045 mC tick=220
+[00:00:00.370,000] <inf> l4_task1: [LOGGER-MSG] seq=1 temp=28045 mC latency=170ms
+[00:00:00.400,000] <inf> l4_task1: [SENSOR] publish seq=2 temp=25693 mC
+[00:00:00.420,000] <inf> l4_task1: [DISPLAY-LIS] seq=2 temp=25693 mC tick=420
+[00:00:00.600,000] <inf> l4_task1: [SENSOR] publish seq=3 temp=27841 mC
+[00:00:00.620,000] <inf> l4_task1: [DISPLAY-LIS] seq=3 temp=27841 mC tick=620
+[00:00:00.720,000] <inf> l4_task1: [LOGGER-MSG] seq=2 temp=25693 mC latency=320ms
+[00:00:00.800,000] <inf> l4_task1: [SENSOR] publish seq=4 temp=26345 mC
+[00:00:00.821,000] <inf> l4_task1: [DISPLAY-LIS] seq=4 temp=26345 mC tick=821
+[00:00:01.001,000] <inf> l4_task1: [SENSOR] publish seq=5 temp=27975 mC
+[00:00:01.021,000] <inf> l4_task1: [DISPLAY-LIS] seq=5 temp=27975 mC tick=1021
+[00:00:01.070,000] <inf> l4_task1: [LOGGER-MSG] seq=3 temp=27841 mC latency=470ms
+[00:00:01.201,000] <inf> l4_task1: [SENSOR] publish seq=6 temp=26930 mC
+[00:00:01.221,000] <inf> l4_task1: [DISPLAY-LIS] seq=6 temp=26930 mC tick=1221
+[00:00:01.401,000] <inf> l4_task1: [SENSOR] publish seq=7 temp=28236 mC
+[00:00:01.420,000] <inf> l4_task1: [LOGGER-MSG] seq=4 temp=26345 mC latency=620ms
+[00:00:01.421,000] <inf> l4_task1: [DISPLAY-LIS] seq=7 temp=28236 mC tick=1421
+[00:00:01.601,000] <inf> l4_task1: [SENSOR] publish seq=8 temp=25051 mC
+[00:00:01.621,000] <inf> l4_task1: [DISPLAY-LIS] seq=8 temp=25051 mC tick=1621
+[00:00:01.770,000] <inf> l4_task1: [LOGGER-MSG] seq=5 temp=27975 mC latency=769ms
+[00:00:01.801,000] <inf> l4_task1: [SENSOR] publish seq=9 temp=27361 mC
+[00:00:01.822,000] <inf> l4_task1: [DISPLAY-LIS] seq=9 temp=27361 mC tick=1822
+[00:00:02.002,000] <inf> l4_task1: [SENSOR] publish seq=10 temp=25303 mC
+[00:00:02.022,000] <inf> l4_task1: [DISPLAY-LIS] seq=10 temp=25303 mC tick=2022
+[00:00:02.120,000] <inf> l4_task1: [LOGGER-MSG] seq=6 temp=26930 mC latency=919ms
+[00:00:02.202,000] <inf> l4_task1: [SENSOR] publish seq=11 temp=25891 mC
+[00:00:02.222,000] <inf> l4_task1: [DISPLAY-LIS] seq=11 temp=25891 mC tick=2222
+[00:00:02.402,000] <inf> l4_task1: [SENSOR] publish seq=12 temp=28148 mC
+[00:00:02.422,000] <inf> l4_task1: [DISPLAY-LIS] seq=12 temp=28148 mC tick=2422
+[00:00:02.471,000] <inf> l4_task1: [LOGGER-MSG] seq=7 temp=28236 mC latency=1070ms
+[00:00:02.602,000] <inf> l4_task1: [SENSOR] publish seq=13 temp=28691 mC
+[00:00:02.622,000] <inf> l4_task1: [DISPLAY-LIS] seq=13 temp=28691 mC tick=2622
+[00:00:02.802,000] <inf> l4_task1: [SENSOR] publish seq=14 temp=26588 mC
+[00:00:02.821,000] <inf> l4_task1: [LOGGER-MSG] seq=8 temp=25051 mC latency=1220ms
+[00:00:02.823,000] <inf> l4_task1: [DISPLAY-LIS] seq=14 temp=26588 mC tick=2823
+[00:00:03.003,000] <inf> l4_task1: [SENSOR] done its publishing
+[00:00:03.171,000] <inf> l4_task1: [LOGGER-MSG] seq=9 temp=27361 mC latency=1370ms
+[00:00:03.521,000] <inf> l4_task1: [LOGGER-MSG] seq=10 temp=25303 mC latency=1519ms
+[00:00:03.871,000] <inf> l4_task1: [LOGGER-MSG] seq=11 temp=25891 mC latency=1669ms
+[00:00:04.221,000] <inf> l4_task1: [LOGGER-MSG] seq=12 temp=28148 mC latency=1819ms
+[00:00:04.571,000] <inf> l4_task1: [LOGGER-MSG] seq=13 temp=28691 mC latency=1969ms
+[00:00:04.921,000] <inf> l4_task1: [LOGGER-MSG] seq=14 temp=26588 mC latency=2119ms
+[00:00:05.271,000] <inf> l4_task1: [LOGGER-MSG] done received=15
