@@ -1,53 +1,181 @@
 *** Booting Zephyr OS build v4.4.0 ***
-[00:00:00.000,000] <inf> l4_task1: ======= Lecture 4: Zbus Event-Driven System =======
-[00:00:00.000,000] <inf> l4_task1: sensor publishes every 180 ms (15 events)
-[00:00:00.000,000] <inf> l4_task1: display listener = fast updates (publisher context)
-[00:00:00.000,000] <inf> l4_task1: logger subscriber = slower message-copy processing
-[00:00:00.000,000] <inf> l4_task1: ===================================================
-[00:00:00.000,000] <inf> l4_task1: [SENSOR] publish seq=0 temp=24971 mC
-[00:00:00.020,000] <inf> l4_task1: [DISPLAY-LIS] seq=0 temp=24971 mC tick=20
-[00:00:00.020,000] <inf> l4_task1: [LOGGER-MSG] seq=0 temp=24971 mC latency=20ms
-[00:00:00.200,000] <inf> l4_task1: [SENSOR] publish seq=1 temp=28045 mC
-[00:00:00.220,000] <inf> l4_task1: [DISPLAY-LIS] seq=1 temp=28045 mC tick=220
-[00:00:00.370,000] <inf> l4_task1: [LOGGER-MSG] seq=1 temp=28045 mC latency=170ms
-[00:00:00.400,000] <inf> l4_task1: [SENSOR] publish seq=2 temp=25693 mC
-[00:00:00.420,000] <inf> l4_task1: [DISPLAY-LIS] seq=2 temp=25693 mC tick=420
-[00:00:00.600,000] <inf> l4_task1: [SENSOR] publish seq=3 temp=27841 mC
-[00:00:00.620,000] <inf> l4_task1: [DISPLAY-LIS] seq=3 temp=27841 mC tick=620
-[00:00:00.720,000] <inf> l4_task1: [LOGGER-MSG] seq=2 temp=25693 mC latency=320ms
-[00:00:00.800,000] <inf> l4_task1: [SENSOR] publish seq=4 temp=26345 mC
-[00:00:00.821,000] <inf> l4_task1: [DISPLAY-LIS] seq=4 temp=26345 mC tick=821
-[00:00:01.001,000] <inf> l4_task1: [SENSOR] publish seq=5 temp=27975 mC
-[00:00:01.021,000] <inf> l4_task1: [DISPLAY-LIS] seq=5 temp=27975 mC tick=1021
-[00:00:01.070,000] <inf> l4_task1: [LOGGER-MSG] seq=3 temp=27841 mC latency=470ms
-[00:00:01.201,000] <inf> l4_task1: [SENSOR] publish seq=6 temp=26930 mC
-[00:00:01.221,000] <inf> l4_task1: [DISPLAY-LIS] seq=6 temp=26930 mC tick=1221
-[00:00:01.401,000] <inf> l4_task1: [SENSOR] publish seq=7 temp=28236 mC
-[00:00:01.420,000] <inf> l4_task1: [LOGGER-MSG] seq=4 temp=26345 mC latency=620ms
-[00:00:01.421,000] <inf> l4_task1: [DISPLAY-LIS] seq=7 temp=28236 mC tick=1421
-[00:00:01.601,000] <inf> l4_task1: [SENSOR] publish seq=8 temp=25051 mC
-[00:00:01.621,000] <inf> l4_task1: [DISPLAY-LIS] seq=8 temp=25051 mC tick=1621
-[00:00:01.770,000] <inf> l4_task1: [LOGGER-MSG] seq=5 temp=27975 mC latency=769ms
-[00:00:01.801,000] <inf> l4_task1: [SENSOR] publish seq=9 temp=27361 mC
-[00:00:01.822,000] <inf> l4_task1: [DISPLAY-LIS] seq=9 temp=27361 mC tick=1822
-[00:00:02.002,000] <inf> l4_task1: [SENSOR] publish seq=10 temp=25303 mC
-[00:00:02.022,000] <inf> l4_task1: [DISPLAY-LIS] seq=10 temp=25303 mC tick=2022
-[00:00:02.120,000] <inf> l4_task1: [LOGGER-MSG] seq=6 temp=26930 mC latency=919ms
-[00:00:02.202,000] <inf> l4_task1: [SENSOR] publish seq=11 temp=25891 mC
-[00:00:02.222,000] <inf> l4_task1: [DISPLAY-LIS] seq=11 temp=25891 mC tick=2222
-[00:00:02.402,000] <inf> l4_task1: [SENSOR] publish seq=12 temp=28148 mC
-[00:00:02.422,000] <inf> l4_task1: [DISPLAY-LIS] seq=12 temp=28148 mC tick=2422
-[00:00:02.471,000] <inf> l4_task1: [LOGGER-MSG] seq=7 temp=28236 mC latency=1070ms
-[00:00:02.602,000] <inf> l4_task1: [SENSOR] publish seq=13 temp=28691 mC
-[00:00:02.622,000] <inf> l4_task1: [DISPLAY-LIS] seq=13 temp=28691 mC tick=2622
-[00:00:02.802,000] <inf> l4_task1: [SENSOR] publish seq=14 temp=26588 mC
-[00:00:02.821,000] <inf> l4_task1: [LOGGER-MSG] seq=8 temp=25051 mC latency=1220ms
-[00:00:02.823,000] <inf> l4_task1: [DISPLAY-LIS] seq=14 temp=26588 mC tick=2823
-[00:00:03.003,000] <inf> l4_task1: [SENSOR] done its publishing
-[00:00:03.171,000] <inf> l4_task1: [LOGGER-MSG] seq=9 temp=27361 mC latency=1370ms
-[00:00:03.521,000] <inf> l4_task1: [LOGGER-MSG] seq=10 temp=25303 mC latency=1519ms
-[00:00:03.871,000] <inf> l4_task1: [LOGGER-MSG] seq=11 temp=25891 mC latency=1669ms
-[00:00:04.221,000] <inf> l4_task1: [LOGGER-MSG] seq=12 temp=28148 mC latency=1819ms
-[00:00:04.571,000] <inf> l4_task1: [LOGGER-MSG] seq=13 temp=28691 mC latency=1969ms
-[00:00:04.921,000] <inf> l4_task1: [LOGGER-MSG] seq=14 temp=26588 mC latency=2119ms
-[00:00:05.271,000] <inf> l4_task1: [LOGGER-MSG] done received=15
+[00:00:00.000,000] <inf> l5_task1: === L5 TASK1: zbus event pipeline with watchdog + health-check ===
+[00:00:00.000,000] <inf> l5_task1: Sensor (200ms) -> Listener (fast) + Subscriber (1000ms delay)
+[00:00:00.000,000] <inf> l5_task1: Watchdog feeds per msg; health-check monitors msgq at 75% fill
+[00:00:00.000,000] <inf> l5_task1: Production slows on health alert; EoP (TERM_SEQ) stops pipeline
+[00:00:00.000,000] <inf> l5_task1: ==================================================================
+[00:00:00.000,000] <inf> l5_task1: [LOGGER-MSG] Message queue capacity: 12
+[00:00:00.000,000] <inf> l5_task1: [WATCHDOG] task_wdt initialized, channel=0
+[00:00:00.000,000] <inf> l5_task1: [SENSOR] publish seq=0 temp=26.2°C tick=0
+[00:00:00.200,000] <inf> l5_task1: [DISPLAY-LIS] seq=0 temp=26.2°C tick=200
+[00:00:00.200,000] <inf> l5_task1: [LOGGER-MSG] seq=0 temp=26.2°C tick=0 latency=200
+[00:00:00.200,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:00.400,000] <inf> l5_task1: [SENSOR] publish seq=1 temp=27.0°C tick=400
+[00:00:00.600,000] <inf> l5_task1: [DISPLAY-LIS] seq=1 temp=27.0°C tick=600
+[00:00:00.800,000] <inf> l5_task1: [SENSOR] publish seq=2 temp=25.6°C tick=800
+[00:00:01.000,000] <inf> l5_task1: [HEALTH] check 1: sensor_chan msgq free=11 (8% filled)
+[00:00:01.000,000] <inf> l5_task1: [DISPLAY-LIS] seq=2 temp=25.6°C tick=1000
+[00:00:01.200,000] <inf> l5_task1: [LOGGER-MSG] seq=2 temp=25.6°C tick=800 latency=400
+[00:00:01.200,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:01.200,000] <inf> l5_task1: [SENSOR] publish seq=3 temp=24.1°C tick=1200
+[00:00:01.401,000] <inf> l5_task1: [DISPLAY-LIS] seq=3 temp=24.1°C tick=1401
+[00:00:01.601,000] <inf> l5_task1: [SENSOR] publish seq=4 temp=28.4°C tick=1601
+[00:00:01.801,000] <inf> l5_task1: [DISPLAY-LIS] seq=4 temp=28.4°C tick=1801
+[00:00:02.000,000] <inf> l5_task1: [HEALTH] check 2: sensor_chan msgq free=9 (25% filled)
+[00:00:02.001,000] <inf> l5_task1: [SENSOR] publish seq=5 temp=28.6°C tick=2001
+[00:00:02.200,000] <inf> l5_task1: [LOGGER-MSG] seq=4 temp=28.4°C tick=1601 latency=599
+[00:00:02.200,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:02.201,000] <inf> l5_task1: [DISPLAY-LIS] seq=5 temp=28.6°C tick=2201
+[00:00:02.401,000] <inf> l5_task1: [SENSOR] publish seq=6 temp=27.9°C tick=2401
+[00:00:02.601,000] <inf> l5_task1: [DISPLAY-LIS] seq=6 temp=27.9°C tick=2601
+[00:00:02.801,000] <inf> l5_task1: [SENSOR] publish seq=7 temp=25.3°C tick=2801
+[00:00:03.000,000] <inf> l5_task1: [HEALTH] check 3: sensor_chan msgq free=8 (33% filled)
+[00:00:03.002,000] <inf> l5_task1: [DISPLAY-LIS] seq=7 temp=25.3°C tick=3002
+[00:00:03.200,000] <inf> l5_task1: [LOGGER-MSG] seq=7 temp=25.3°C tick=2801 latency=399
+[00:00:03.200,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:03.202,000] <inf> l5_task1: [SENSOR] publish seq=8 temp=24.7°C tick=3202
+[00:00:03.402,000] <inf> l5_task1: [DISPLAY-LIS] seq=8 temp=24.7°C tick=3402
+[00:00:03.602,000] <inf> l5_task1: [SENSOR] publish seq=9 temp=25.2°C tick=3602
+[00:00:03.802,000] <inf> l5_task1: [DISPLAY-LIS] seq=9 temp=25.2°C tick=3802
+[00:00:04.000,000] <inf> l5_task1: [HEALTH] check 4: sensor_chan msgq free=6 (50% filled)
+[00:00:04.002,000] <inf> l5_task1: [SENSOR] publish seq=10 temp=28.8°C tick=4002
+[00:00:04.200,000] <inf> l5_task1: [LOGGER-MSG] seq=9 temp=25.2°C tick=3602 latency=598
+[00:00:04.200,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:04.202,000] <inf> l5_task1: [DISPLAY-LIS] seq=10 temp=28.8°C tick=4202
+[00:00:04.402,000] <inf> l5_task1: [SENSOR] publish seq=11 temp=27.4°C tick=4402
+[00:00:04.602,000] <inf> l5_task1: [DISPLAY-LIS] seq=11 temp=27.4°C tick=4602
+[00:00:04.803,000] <inf> l5_task1: [SENSOR] publish seq=12 temp=24.2°C tick=4803
+[00:00:05.000,000] <inf> l5_task1: [HEALTH] check 5: sensor_chan msgq free=5 (58% filled)
+[00:00:05.003,000] <inf> l5_task1: [DISPLAY-LIS] seq=12 temp=24.2°C tick=5003
+[00:00:05.200,000] <inf> l5_task1: [LOGGER-MSG] seq=12 temp=24.2°C tick=4803 latency=397
+[00:00:05.200,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:05.203,000] <inf> l5_task1: [SENSOR] publish seq=13 temp=26.8°C tick=5203
+[00:00:05.403,000] <inf> l5_task1: [DISPLAY-LIS] seq=13 temp=26.8°C tick=5403
+[00:00:05.603,000] <inf> l5_task1: [SENSOR] publish seq=14 temp=27.9°C tick=5603
+[00:00:05.803,000] <inf> l5_task1: [DISPLAY-LIS] seq=14 temp=27.9°C tick=5803
+[00:00:06.000,000] <wrn> l5_task1: [HEALTH] sensor_chan subscriber msgq 75% filled (free=3) — ALERT!
+[00:00:06.003,000] <inf> l5_task1: [SENSOR] publish seq=15 temp=26.6°C tick=6003
+[00:00:06.003,000] <wrn> l5_task1: [SENSOR] received signal to slow down production!!!
+[00:00:06.003,000] <wrn> l5_task1: [SENSOR] New period=250
+[00:00:06.201,000] <inf> l5_task1: [LOGGER-MSG] seq=14 temp=27.9°C tick=5603 latency=598
+[00:00:06.201,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:06.253,000] <inf> l5_task1: [DISPLAY-LIS] seq=15 temp=26.6°C tick=6253
+[00:00:06.503,000] <inf> l5_task1: [SENSOR] publish seq=16 temp=27.1°C tick=6503
+[00:00:06.753,000] <inf> l5_task1: [DISPLAY-LIS] seq=16 temp=27.1°C tick=6753
+[00:00:07.000,000] <wrn> l5_task1: [HEALTH] sensor_chan subscriber msgq 83% filled (free=2) — ALERT!
+[00:00:07.004,000] <inf> l5_task1: [SENSOR] publish seq=17 temp=26.6°C tick=7004
+[00:00:07.004,000] <wrn> l5_task1: [SENSOR] received signal to slow down production!!!
+[00:00:07.004,000] <wrn> l5_task1: [SENSOR] New period=312
+[00:00:07.201,000] <inf> l5_task1: [LOGGER-MSG] seq=16 temp=27.1°C tick=6503 latency=698
+[00:00:07.201,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:07.316,000] <inf> l5_task1: [DISPLAY-LIS] seq=17 temp=26.6°C tick=7316
+[00:00:07.628,000] <inf> l5_task1: [SENSOR] publish seq=18 temp=26.2°C tick=7628
+[00:00:07.940,000] <inf> l5_task1: [DISPLAY-LIS] seq=18 temp=26.2°C tick=7940
+[00:00:08.001,000] <wrn> l5_task1: [HEALTH] sensor_chan subscriber msgq 91% filled (free=1) — ALERT!
+[00:00:08.201,000] <inf> l5_task1: [LOGGER-MSG] seq=18 temp=26.2°C tick=7628 latency=573
+[00:00:08.201,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:08.252,000] <inf> l5_task1: [SENSOR] publish seq=19 temp=27.6°C tick=8252
+[00:00:08.252,000] <wrn> l5_task1: [SENSOR] received signal to slow down production!!!
+[00:00:08.252,000] <wrn> l5_task1: [SENSOR] New period=390
+[00:00:08.642,000] <inf> l5_task1: [DISPLAY-LIS] seq=19 temp=27.6°C tick=8642
+[00:00:09.001,000] <wrn> l5_task1: [HEALTH] sensor_chan subscriber msgq 91% filled (free=1) — ALERT!
+[00:00:09.032,000] <inf> l5_task1: [SENSOR] publish seq=20 temp=26.5°C tick=9032
+[00:00:09.032,000] <wrn> l5_task1: [SENSOR] received signal to slow down production!!!
+[00:00:09.032,000] <wrn> l5_task1: [SENSOR] New period=487
+[00:00:09.201,000] <inf> l5_task1: [LOGGER-MSG] seq=19 temp=27.6°C tick=8252 latency=949
+[00:00:09.201,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:09.519,000] <inf> l5_task1: [DISPLAY-LIS] seq=20 temp=26.5°C tick=9519
+[00:00:10.001,000] <wrn> l5_task1: [HEALTH] sensor_chan subscriber msgq 91% filled (free=1) — ALERT!
+[00:00:10.007,000] <inf> l5_task1: [SENSOR] publish seq=21 temp=28.0°C tick=10007
+[00:00:10.007,000] <wrn> l5_task1: [SENSOR] received signal to slow down production!!!
+[00:00:10.007,000] <wrn> l5_task1: [SENSOR] New period=608
+[00:00:10.201,000] <inf> l5_task1: [LOGGER-MSG] seq=20 temp=26.5°C tick=9032 latency=1169
+[00:00:10.201,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:10.615,000] <inf> l5_task1: [DISPLAY-LIS] seq=21 temp=28.0°C tick=10615
+[00:00:11.001,000] <wrn> l5_task1: [HEALTH] sensor_chan subscriber msgq 91% filled (free=1) — ALERT!
+[00:00:11.201,000] <inf> l5_task1: [LOGGER-MSG] seq=21 temp=28.0°C tick=10007 latency=1194
+[00:00:11.201,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:11.223,000] <inf> l5_task1: [SENSOR] publish seq=22 temp=26.2°C tick=11223
+[00:00:11.223,000] <wrn> l5_task1: [SENSOR] received signal to slow down production!!!
+[00:00:11.223,000] <wrn> l5_task1: [SENSOR] New period=760
+[00:00:11.983,000] <inf> l5_task1: [DISPLAY-LIS] seq=22 temp=26.2°C tick=11983
+[00:00:12.001,000] <wrn> l5_task1: [HEALTH] sensor_chan subscriber msgq 91% filled (free=1) — ALERT!
+[00:00:12.201,000] <inf> l5_task1: [LOGGER-MSG] seq=22 temp=26.2°C tick=11223 latency=978
+[00:00:12.201,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:12.743,000] <inf> l5_task1: [SENSOR] publish seq=23 temp=26.0°C tick=12743
+[00:00:12.743,000] <wrn> l5_task1: [SENSOR] received signal to slow down production!!!
+[00:00:12.743,000] <wrn> l5_task1: [SENSOR] New period=950
+[00:00:13.001,000] <wrn> l5_task1: [HEALTH] sensor_chan subscriber msgq 83% filled (free=2) — ALERT!
+[00:00:13.201,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:13.693,000] <inf> l5_task1: [DISPLAY-LIS] seq=23 temp=26.0°C tick=13693
+[00:00:14.001,000] <wrn> l5_task1: [HEALTH] sensor_chan subscriber msgq 83% filled (free=2) — ALERT!
+[00:00:14.201,000] <inf> l5_task1: [LOGGER-MSG] seq=23 temp=26.0°C tick=12743 latency=1458
+[00:00:14.201,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:14.643,000] <inf> l5_task1: [SENSOR] publish seq=24 temp=24.4°C tick=14643
+[00:00:14.643,000] <wrn> l5_task1: [SENSOR] received signal to slow down production!!!
+[00:00:14.643,000] <wrn> l5_task1: [SENSOR] New period=1187
+[00:00:15.001,000] <wrn> l5_task1: [HEALTH] sensor_chan subscriber msgq 75% filled (free=3) — ALERT!
+[00:00:15.201,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:15.830,000] <inf> l5_task1: [DISPLAY-LIS] seq=24 temp=24.4°C tick=15830
+[00:00:16.001,000] <wrn> l5_task1: [HEALTH] sensor_chan subscriber msgq 75% filled (free=3) — ALERT!
+[00:00:16.202,000] <inf> l5_task1: [LOGGER-MSG] seq=24 temp=24.4°C tick=14643 latency=1559
+[00:00:16.202,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:17.001,000] <inf> l5_task1: [HEALTH] check 17: sensor_chan msgq free=4 (66% filled)
+[00:00:17.017,000] <inf> l5_task1: [SENSOR] publish seq=25 temp=26.8°C tick=17017
+[00:00:17.017,000] <wrn> l5_task1: [SENSOR] received signal to slow down production!!!
+[00:00:17.017,000] <wrn> l5_task1: [SENSOR] New period=1483
+[00:00:17.202,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:18.002,000] <inf> l5_task1: [HEALTH] check 18: sensor_chan msgq free=5 (58% filled)
+[00:00:18.202,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:18.500,000] <inf> l5_task1: [DISPLAY-LIS] seq=25 temp=26.8°C tick=18500
+[00:00:19.002,000] <inf> l5_task1: [HEALTH] check 19: sensor_chan msgq free=5 (58% filled)
+[00:00:19.202,000] <inf> l5_task1: [LOGGER-MSG] seq=25 temp=26.8°C tick=17017 latency=2185
+[00:00:19.202,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:19.984,000] <inf> l5_task1: [SENSOR] publish seq=26 temp=26.1°C tick=19984
+[00:00:20.002,000] <inf> l5_task1: [HEALTH] check 20: sensor_chan msgq free=6 (50% filled)
+[00:00:20.202,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:21.002,000] <inf> l5_task1: [HEALTH] check 21: sensor_chan msgq free=7 (41% filled)
+[00:00:21.202,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:21.467,000] <inf> l5_task1: [DISPLAY-LIS] seq=26 temp=26.1°C tick=21467
+[00:00:22.002,000] <inf> l5_task1: [HEALTH] check 22: sensor_chan msgq free=7 (41% filled)
+[00:00:22.202,000] <inf> l5_task1: [LOGGER-MSG] seq=26 temp=26.1°C tick=19984 latency=2218
+[00:00:22.202,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:22.950,000] <inf> l5_task1: [SENSOR] publish seq=27 temp=27.9°C tick=22950
+[00:00:23.002,000] <inf> l5_task1: [HEALTH] check 23: sensor_chan msgq free=8 (33% filled)
+[00:00:23.202,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:24.002,000] <inf> l5_task1: [HEALTH] check 24: sensor_chan msgq free=9 (25% filled)
+[00:00:24.202,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:24.433,000] <inf> l5_task1: [DISPLAY-LIS] seq=27 temp=27.9°C tick=24433
+[00:00:25.002,000] <inf> l5_task1: [HEALTH] check 25: sensor_chan msgq free=9 (25% filled)
+[00:00:25.202,000] <inf> l5_task1: [LOGGER-MSG] seq=27 temp=27.9°C tick=22950 latency=2252
+[00:00:25.202,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:25.916,000] <inf> l5_task1: [SENSOR] publish seq=28 temp=27.3°C tick=25916
+[00:00:26.002,000] <inf> l5_task1: [HEALTH] check 26: sensor_chan msgq free=10 (16% filled)
+[00:00:26.203,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:27.002,000] <inf> l5_task1: [HEALTH] check 27: sensor_chan msgq free=11 (8% filled)
+[00:00:27.203,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:27.399,000] <inf> l5_task1: [DISPLAY-LIS] seq=28 temp=27.3°C tick=27399
+[00:00:28.003,000] <inf> l5_task1: [HEALTH] check 28: sensor_chan msgq free=11 (8% filled)
+[00:00:28.203,000] <inf> l5_task1: [LOGGER-MSG] seq=28 temp=27.3°C tick=25916 latency=2287
+[00:00:28.203,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:28.882,000] <inf> l5_task1: [SENSOR] publish seq=29 temp=27.3°C tick=28882
+[00:00:29.003,000] <inf> l5_task1: [HEALTH] check 29: sensor_chan msgq free=12 (0% filled)
+[00:00:30.003,000] <inf> l5_task1: [HEALTH] check 30: sensor_chan msgq free=12 (0% filled)
+[00:00:30.203,000] <wrn> l5_task1: [WATCHDOG] task watchdog fired! channel=0 — consumer stuck!
+[00:00:30.203,000] <wrn> l5_task1: [LOGGER-MSG] timeout ret=-11 (retrying)
+[00:00:30.365,000] <inf> l5_task1: [DISPLAY-LIS] seq=29 temp=27.3°C tick=30365
+[00:00:30.365,000] <inf> l5_task1: [LOGGER-MSG] seq=29 temp=27.3°C tick=28882 latency=1483
+[00:00:30.365,000] <inf> l5_task1: [WATCHDOG] fed channel 0
+[00:00:31.003,000] <inf> l5_task1: [HEALTH] check 31: sensor_chan msgq free=12 (0% filled)
+[00:00:31.848,000] <wrn> l5_task1: [SENSOR] EoP msg sent!
+[00:00:32.003,000] <inf> l5_task1: [HEALTH] check 32: sensor_chan msgq free=12 (0% filled)
+[00:00:32.365,000] <wrn> l5_task1: [WATCHDOG] task watchdog fired! channel=0 — consumer stuck!
+[00:00:32.366,000] <wrn> l5_task1: [LOGGER-MSG] timeout ret=-11 (retrying)
+[00:00:33.003,000] <inf> l5_task1: [HEALTH] check 33: sensor_chan msgq free=12 (0% filled)
+[00:00:33.332,000] <wrn> l5_task1: [DISPLAY-LIS] received end of production message
+[00:00:33.332,000] <inf> l5_task1: [SENSOR] done its publishing
+[00:00:33.332,000] <wrn> l5_task1: [LOGGER-MSG] received end of production message
+[00:00:33.332,000] <wrn> l5_task1: [LOGGER-MSG] has received 20 messages
+[00:00:33.332,000] <inf> l5_task1: [WATCHDOG] deleted channel 0
+[00:00:34.003,000] <inf> l5_task1: [HEALTH] check 34: sensor_chan msgq free=12 (0% filled)
+[00:00:34.003,000] <inf> l5_task1: [HEALTH] health-check complete
