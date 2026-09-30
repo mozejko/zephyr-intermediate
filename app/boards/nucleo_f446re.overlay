@@ -1,0 +1,20 @@
+/*
+ * USART2 (ST-Link VCP, PA2/PA3) keeps the console, the shell and the log
+ * output to itself. CTF tracing gets its own UART, otherwise the binary
+ * trace packets and the ASCII log lines are interleaved on the same wire
+ * and both streams become unreadable.
+ *
+ * USART3 is not wired to the ST-Link, so it needs an external USB-TTL
+ * adapter: TX = PC10 (morpho CN7-1), RX = PC11 (morpho CN7-2).
+ */
+&usart3 {
+	pinctrl-0 = <&usart3_tx_pc10 &usart3_rx_pc11>;
+	pinctrl-names = "default";
+	status = "okay";
+};
+
+/ {
+	chosen {
+		zephyr,tracing-uart = &usart3;
+	};
+};
