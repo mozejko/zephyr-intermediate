@@ -5,8 +5,12 @@
 LOG_MODULE_REGISTER(homework, LOG_LEVEL_INF);
 
 #define STACK_SIZE            2048
-#define CONTROL_PRIORITY         7
-#define MAINTENANCE_PRIORITY     4
+/* Correction: control has to outrank the background maintenance work.
+ * With maintenance above control, its 45 ms busy-wait ran to completion
+ * before control could be scheduled, so every event missed the deadline.
+ */
+#define CONTROL_PRIORITY         4
+#define MAINTENANCE_PRIORITY     7
 #define EVENT_PERIOD_MS        250
 #define MAINTENANCE_LOAD_US  45000
 
