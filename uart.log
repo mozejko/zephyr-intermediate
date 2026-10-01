@@ -1,0 +1,48 @@
+*** Booting Zephyr OS build v4.4.0 ***
+[00:00:00.024,000] <inf> homework: === L6 Homework: Runtime Investigation ===
+[00:00:00.024,000] <inf> homework: Control work must start within 10 ms
+[00:00:00.024,000] <inf> homework: Inspect, measure, trace, explain, and correct the delay
+[00:00:01.104,000] <wrn> homework: Skipped 2 messages
+[00:00:01.105,000] <wrn> homework: [CONTROL] seq=2 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=3
+[00:00:02.104,000] <wrn> homework: Skipped 3 messages
+[00:00:02.104,000] <wrn> homework: [CONTROL] seq=6 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=7
+[00:00:03.104,000] <wrn> homework: Skipped 3 messages
+[00:00:03.105,000] <wrn> homework: [CONTROL] seq=10 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=11
+[00:00:04.104,000] <wrn> homework: Skipped 3 messages
+[00:00:04.104,000] <wrn> homework: [CONTROL] seq=14 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=15
+[00:00:05.104,000] <wrn> homework: Skipped 3 messages
+[00:00:05.105,000] <wrn> homework: [CONTROL] seq=18 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=19
+[00:00:06.104,000] <wrn> homework: Skipped 3 messages
+[00:00:06.104,000] <wrn> homework: [CONTROL] seq=22 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=23
+[00:00:07.104,000] <wrn> homework: Skipped 3 messages
+[00:00:07.105,000] <wrn> homework: [CONTROL] seq=26 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=27
+[00:00:08.104,000] <wrn> homework: Skipped 3 messages
+[00:00:08.104,000] <wrn> homework: [CONTROL] seq=30 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=31
+[00:00:09.104,000] <wrn> homework: Skipped 3 messages
+[00:00:09.105,000] <wrn> homework: [CONTROL] seq=34 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=35
+[00:00:10.104,000] <wrn> homework: Skipped 3 messages
+[00:00:10.104,000] <wrn> homework: [CONTROL] seq=38 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=39
+[00:00:11.104,000] <wrn> homework: Skipped 3 messages
+[00:00:11.105,000] <wrn> homework: [CONTROL] seq=42 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=43
+[00:00:12.104,000] <wrn> homework: Skipped 3 messages
+[00:00:12.104,000] <wrn> homework: [CONTROL] seq=46 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=47
+[00:00:13.104,000] <wrn> homework: Skipped 3 messages
+[00:00:13.105,000] <wrn> homework: [CONTROL] seq=50 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=51
+[00:00:14.104,000] <wrn> homework: Skipped 3 messages
+[00:00:14.104,000] <wrn> homework: [CONTROL] seq=54 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=55
+[00:00:15.104,000] <wrn> homework: Skipped 3 messages
+[00:00:15.105,000] <wrn> homework: [CONTROL] seq=58 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=59
+[00:00:16.104,000] <wrn> homework: Skipped 3 messages
+[00:00:16.104,000] <wrn> homework: [CONTROL] seq=62 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=63
+[00:00:17.104,000] <wrn> homework: Skipped 3 messages
+[00:00:17.105,000] <wrn> homework: [CONTROL] seq=66 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=67
+[00:00:18.104,000] <wrn> homework: Skipped 3 messages
+[00:00:18.104,000] <wrn> homework: [CONTROL] seq=70 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=71
+[00:00:19.104,000] <wrn> homework: Skipped 3 messages
+[00:00:19.105,000] <wrn> homework: [CONTROL] seq=74 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=75
+[00:00:20.104,000] <wrn> homework: Skipped 3 messages
+[00:00:20.104,000] <wrn> homework: [CONTROL] seq=78 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=79
+[00:00:21.104,000] <wrn> homework: Skipped 3 messages
+[00:00:21.105,000] <wrn> homework: [CONTROL] seq=82 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=83
+[00:00:22.104,000] <wrn> homework: Skipped 3 messages
+[00:00:22.104,000] <wrn> homework: [CONTROL] seq=86 start latency=78 ms (MISS, deadline 10 ms) ok=0 miss=87

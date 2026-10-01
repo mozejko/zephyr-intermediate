@@ -10,6 +10,11 @@ LOG_MODULE_REGISTER(homework, LOG_LEVEL_INF);
 #define EVENT_PERIOD_MS        250
 #define MAINTENANCE_LOAD_US  45000
 
+/* Response-time guarantee: control has to start in 10ms
+   since the event was created. */
+
+#define RESPONSE_DEADLINE_MS    10
+
 struct control_event {
     uint32_t seq;
     uint32_t ready_ms;
@@ -64,10 +69,18 @@ static void control_fn(void *p1, void *p2, void *p3)
             continue;
         }
 
-        LOG_INF("[CONTROL] processed seq=%u", event.seq);
+        /* Response-time detection */
+        uint32_t latency_ms = k_uptime_get_32() - event.ready_ms;
 
-        /* TODO: Define a response-time guarantee. */
-        /* TODO: Measure latency and count every deadline miss. */
+        if (latency_ms <= RESPONSE_DEADLINE_MS) {
+            LOG_INF("[CONTROL] seq=%u start latency=%u ms (OK, deadline %u ms)",
+                    event.seq, latency_ms, RESPONSE_DEADLINE_MS);
+        } else {
+            LOG_WRN("[CONTROL] seq=%u start latency=%u ms (MISS, deadline %u ms)",
+                    event.seq, latency_ms, RESPONSE_DEADLINE_MS);
+        }
+
+        /* TODO: Count every deadline miss. */
         /* TODO: Rate-limit repeated warning messages. */
         /* TODO: Add an application trace event for completion. */
     }
