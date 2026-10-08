@@ -1,0 +1,803 @@
+2026-10-08 21:18:06,202 - twister - INFO - Using Ninja..
+2026-10-08 21:18:06,318 - twister - INFO - Zephyr version: v4.4.0
+2026-10-08 21:18:06,321 - twister - DEBUG - Running cmake script /home/zephyr/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-10-08 21:18:06,321 - twister - DEBUG - Calling cmake: /usr/bin/cmake -DFORMAT=json -P /home/zephyr/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-10-08 21:18:06,618 - twister - DEBUG - Finished running /home/zephyr/zephyrproject/zephyr/cmake/verify-toolchain.cmake
+2026-10-08 21:18:06,618 - twister - INFO - Using 'zephyr/gnu' toolchain variant.
+2026-10-08 21:18:08,566 - twister - DEBUG - Reading testsuite configuration files under /home/zephyr/zephyr-intermediate/tests/temp_alarm...
+2026-10-08 21:18:08,566 - twister - DEBUG - Found possible testsuite in /home/zephyr/zephyr-intermediate/tests/temp_alarm
+2026-10-08 21:18:08,570 - twister - DEBUG - No duplicates found.
+2026-10-08 21:18:08,571 - twister - DEBUG -  platform filter: ['native_sim']
+2026-10-08 21:18:08,571 - twister - DEBUG - platform_pattern: []
+2026-10-08 21:18:08,571 - twister - DEBUG -    vendor filter: []
+2026-10-08 21:18:08,571 - twister - DEBUG -      arch_filter: None
+2026-10-08 21:18:08,571 - twister - DEBUG -       tag_filter: None
+2026-10-08 21:18:08,571 - twister - DEBUG -      exclude_tag: None
+2026-10-08 21:18:08,571 - twister - DEBUG - Checking platform filter: ['native_sim']
+2026-10-08 21:18:08,571 - twister - INFO - Building initial testsuite list...
+2026-10-08 21:18:08,572 - twister - INFO - Built testsuite list in 0.00 seconds
+2026-10-08 21:18:08,573 - twister - INFO - Writing JSON report /home/zephyr/zephyrproject/zephyr/twister-out/testplan.json
+2026-10-08 21:18:08,601 - twister - INFO - JOBS: 8
+2026-10-08 21:18:08,602 - twister - INFO - Adding tasks to the queue...
+2026-10-08 21:18:08,602 - twister - DEBUG - adding native_sim/native/host/gnu/homework.unit.temp_alarm
+2026-10-08 21:18:08,604 - twister - DEBUG - adding native_sim/native/host/gnu/homework.unit.temp_alarm.ordered
+2026-10-08 21:18:08,605 - twister - INFO - Added initial list of jobs to queue
+2026-10-08 21:18:08,617 - twister - DEBUG - Running cmake on /home/zephyr/zephyr-intermediate/tests/temp_alarm for native_sim/native
+2026-10-08 21:18:08,618 - twister - DEBUG - Calling cmake: /usr/bin/cmake -B/home/zephyr/zephyrproject/zephyr/twister-out/native_sim_native/host_gnu/zephyr-intermediate/tests/temp_alarm/homework.unit.temp_alarm.ordered -DTC_RUNID=f6d4164aa0b7e7d9dee598b3e4af8ae7 -DTC_NAME=homework.unit.temp_alarm.ordered -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/home/zephyr/zephyrproject/.venv/bin/python3 -DZEPHYR_TOOLCHAIN_VARIANT=host/gnu -S/home/zephyr/zephyr-intermediate/tests/temp_alarm -DCONFIG_ZTEST_SHUFFLE=n -DBOARD=native_sim/native
+2026-10-08 21:18:08,622 - twister - DEBUG - Launched 8 jobs
+2026-10-08 21:18:08,637 - twister - DEBUG - Running cmake on /home/zephyr/zephyr-intermediate/tests/temp_alarm for native_sim/native
+2026-10-08 21:18:08,637 - twister - DEBUG - Calling cmake: /usr/bin/cmake -B/home/zephyr/zephyrproject/zephyr/twister-out/native_sim_native/host_gnu/zephyr-intermediate/tests/temp_alarm/homework.unit.temp_alarm -DTC_RUNID=d6e1bb4e9746cc9da687246df0f7fe90 -DTC_NAME=homework.unit.temp_alarm -DCONFIG_COMPILER_WARNINGS_AS_ERRORS=y -DEXTRA_GEN_EDT_ARGS=--edtlib-Werror -GNinja -DPython3_EXECUTABLE=/home/zephyr/zephyrproject/.venv/bin/python3 -DZEPHYR_TOOLCHAIN_VARIANT=host/gnu -S/home/zephyr/zephyr-intermediate/tests/temp_alarm -DBOARD=native_sim/native
+2026-10-08 21:18:18,634 - twister - DEBUG - Finished running cmake /home/zephyr/zephyr-intermediate/tests/temp_alarm for native_sim/native in 9.99 seconds
+2026-10-08 21:18:18,638 - twister - DEBUG - build test: native_sim/native/host/gnu/homework.unit.temp_alarm
+2026-10-08 21:18:18,638 - twister - DEBUG - Building /home/zephyr/zephyr-intermediate/tests/temp_alarm for native_sim/native
+2026-10-08 21:18:18,639 - twister - DEBUG - Running /usr/bin/cmake --build /home/zephyr/zephyrproject/zephyr/twister-out/native_sim_native/host_gnu/zephyr-intermediate/tests/temp_alarm/homework.unit.temp_alarm
+2026-10-08 21:18:18,644 - twister - DEBUG - Finished running cmake /home/zephyr/zephyr-intermediate/tests/temp_alarm for native_sim/native in 10.02 seconds
+2026-10-08 21:18:18,647 - twister - DEBUG - build test: native_sim/native/host/gnu/homework.unit.temp_alarm.ordered
+2026-10-08 21:18:18,647 - twister - DEBUG - Building /home/zephyr/zephyr-intermediate/tests/temp_alarm for native_sim/native
+2026-10-08 21:18:18,648 - twister - DEBUG - Running /usr/bin/cmake --build /home/zephyr/zephyrproject/zephyr/twister-out/native_sim_native/host_gnu/zephyr-intermediate/tests/temp_alarm/homework.unit.temp_alarm.ordered
+2026-10-08 21:18:22,947 - twister - DEBUG - Finished building /home/zephyr/zephyr-intermediate/tests/temp_alarm for native_sim/native in 4.30 seconds
+2026-10-08 21:18:22,947 - twister - DEBUG - Determine test cases for test instance: native_sim/native/host/gnu/homework.unit.temp_alarm.ordered
+2026-10-08 21:18:22,947 - twister - DEBUG - Determine test cases for test suite: homework.unit.temp_alarm.ordered
+2026-10-08 21:18:23,020 - twister - DEBUG - Finished building /home/zephyr/zephyr-intermediate/tests/temp_alarm for native_sim/native in 4.38 seconds
+2026-10-08 21:18:23,020 - twister - DEBUG - Test instance native_sim/native/host/gnu/homework.unit.temp_alarm.ordered already has 13 testcase(s) known: [<TestCase homework.unit.temp_alarm.ordered.temp_alarm_invalid_input.init_threshold_out_of_range with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_invalid_input.init_without_device with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_reset.reset_clears_state with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_sensor_errors.fetch_error_propagates with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_sensor_errors.fail_then_recover with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_check.above_threshold with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_threshold.new_threshold_clears_alarm with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_get_status.status_after_init with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_invalid_input.get_status_null with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_invalid_input.set_threshold_out_of_range with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_check.at_threshold with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_sensor_errors.channel_get_error_propagates with None>, <TestCase homework.unit.temp_alarm.ordered.temp_alarm_check.below_threshold with None>]
+2026-10-08 21:18:23,020 - twister - DEBUG - Detected 13 Ztest case(s): [homework.unit.temp_alarm.ordered.temp_alarm_reset.reset_clears_state, homework.unit.temp_alarm.ordered.temp_alarm_threshold.new_threshold_clears_alarm, homework.unit.temp_alarm.ordered.temp_alarm_check.above_threshold, homework.unit.temp_alarm.ordered.temp_alarm_check.at_threshold, homework.unit.temp_alarm.ordered.temp_alarm_check.below_threshold, homework.unit.temp_alarm.ordered.temp_alarm_get_status.status_after_init, homework.unit.temp_alarm.ordered.temp_alarm_invalid_input.set_threshold_out_of_range, homework.unit.temp_alarm.ordered.temp_alarm_invalid_input.init_threshold_out_of_range, homework.unit.temp_alarm.ordered.temp_alarm_invalid_input.init_without_device, homework.unit.temp_alarm.ordered.temp_alarm_invalid_input.get_status_null, homework.unit.temp_alarm.ordered.temp_alarm_sensor_errors.fail_then_recover, homework.unit.temp_alarm.ordered.temp_alarm_sensor_errors.channel_get_error_propagates, homework.unit.temp_alarm.ordered.temp_alarm_sensor_errors.fetch_error_propagates] in /home/zephyr/zephyrproject/zephyr/twister-out/native_sim_native/host_gnu/zephyr-intermediate/tests/temp_alarm/homework.unit.temp_alarm.ordered/zephyr/zephyr.elf
+2026-10-08 21:18:23,020 - twister - DEBUG - Determine test cases for test instance: native_sim/native/host/gnu/homework.unit.temp_alarm
+2026-10-08 21:18:23,020 - twister - DEBUG - Determine test cases for test suite: homework.unit.temp_alarm
+2026-10-08 21:18:23,025 - twister - DEBUG - run test: native_sim/native/host/gnu/homework.unit.temp_alarm.ordered
+2026-10-08 21:18:23,025 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-10-08 21:18:23,025 - twister - DEBUG - Spawning process: /home/zephyr/zephyrproject/zephyr/twister-out/native_sim_native/host_gnu/zephyr-intermediate/tests/temp_alarm/homework.unit.temp_alarm.ordered/zephyr/zephyr.exe
+in directory: /home/zephyr/zephyrproject/zephyr/twister-out/native_sim_native/host_gnu/zephyr-intermediate/tests/temp_alarm/homework.unit.temp_alarm.ordered
+2026-10-08 21:18:23,026 - twister - DEBUG - Spawning BinaryHandler Thread for native_sim/native/host/gnu/homework.unit.temp_alarm.ordered
+2026-10-08 21:18:23,027 - twister - DEBUG - OUTPUT: *** Booting Zephyr OS build v4.4.0 ***
+2026-10-08 21:18:23,028 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_check
+2026-10-08 21:18:23,029 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,029 - twister - DEBUG - OUTPUT: START - test_above_threshold
+2026-10-08 21:18:23,031 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,031 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,031 - twister - DEBUG - OUTPUT:  PASS - test_above_threshold in 0.000 seconds
+2026-10-08 21:18:23,032 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,032 - twister - DEBUG - OUTPUT: START - test_at_threshold
+2026-10-08 21:18:23,032 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,033 - twister - DEBUG - OUTPUT:  PASS - test_at_threshold in 0.000 seconds
+2026-10-08 21:18:23,033 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,033 - twister - DEBUG - OUTPUT: START - test_below_threshold
+2026-10-08 21:18:23,034 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,034 - twister - DEBUG - OUTPUT:  PASS - test_below_threshold in 0.000 seconds
+2026-10-08 21:18:23,034 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,035 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_check succeeded
+2026-10-08 21:18:23,035 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_get_status
+2026-10-08 21:18:23,035 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,036 - twister - DEBUG - OUTPUT: START - test_status_after_init
+2026-10-08 21:18:23,036 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,036 - twister - DEBUG - OUTPUT:  PASS - test_status_after_init in 0.000 seconds
+2026-10-08 21:18:23,037 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,037 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_get_status succeeded
+2026-10-08 21:18:23,037 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_invalid_input
+2026-10-08 21:18:23,037 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,038 - twister - DEBUG - OUTPUT: START - test_get_status_null
+2026-10-08 21:18:23,038 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,038 - twister - DEBUG - OUTPUT:  SKIP - test_get_status_null in 0.000 seconds
+2026-10-08 21:18:23,039 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,039 - twister - DEBUG - OUTPUT: START - test_init_threshold_out_of_range
+2026-10-08 21:18:23,039 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,040 - twister - DEBUG - OUTPUT:  SKIP - test_init_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,040 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,040 - twister - DEBUG - OUTPUT: START - test_init_without_device
+2026-10-08 21:18:23,041 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,041 - twister - DEBUG - OUTPUT:  SKIP - test_init_without_device in 0.000 seconds
+2026-10-08 21:18:23,041 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,042 - twister - DEBUG - OUTPUT: START - test_set_threshold_out_of_range
+2026-10-08 21:18:23,044 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,044 - twister - DEBUG - OUTPUT:  SKIP - test_set_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,045 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,045 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_invalid_input succeeded
+2026-10-08 21:18:23,046 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_reset
+2026-10-08 21:18:23,046 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,046 - twister - DEBUG - OUTPUT: START - test_reset_clears_state
+2026-10-08 21:18:23,047 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,047 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,047 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,048 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,048 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Alarm state reset[0m
+2026-10-08 21:18:23,049 - twister - DEBUG - OUTPUT:  PASS - test_reset_clears_state in 0.000 seconds
+2026-10-08 21:18:23,049 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,049 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_reset succeeded
+2026-10-08 21:18:23,050 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_sensor_errors
+2026-10-08 21:18:23,050 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,050 - twister - DEBUG - OUTPUT: START - test_channel_get_error_propagates
+2026-10-08 21:18:23,051 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,051 - twister - DEBUG - OUTPUT:  SKIP - test_channel_get_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,051 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,052 - twister - DEBUG - OUTPUT: START - test_fail_then_recover
+2026-10-08 21:18:23,052 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,052 - twister - DEBUG - OUTPUT:  SKIP - test_fail_then_recover in 0.000 seconds
+2026-10-08 21:18:23,053 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,053 - twister - DEBUG - OUTPUT: START - test_fetch_error_propagates
+2026-10-08 21:18:23,053 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,053 - twister - DEBUG - OUTPUT:  SKIP - test_fetch_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,054 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,054 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_sensor_errors succeeded
+2026-10-08 21:18:23,054 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_threshold
+2026-10-08 21:18:23,055 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,055 - twister - DEBUG - OUTPUT: START - test_new_threshold_clears_alarm
+2026-10-08 21:18:23,055 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,056 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,056 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Threshold updated to 50 C[0m
+2026-10-08 21:18:23,056 - twister - DEBUG - OUTPUT:  PASS - test_new_threshold_clears_alarm in 0.000 seconds
+2026-10-08 21:18:23,057 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,057 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_threshold succeeded
+2026-10-08 21:18:23,057 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,057 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY START ------
+2026-10-08 21:18:23,058 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,058 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [temp_alarm_check]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.000 seconds
+2026-10-08 21:18:23,058 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_check.test_above_threshold] duration = 0.000 seconds
+2026-10-08 21:18:23,059 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_check.test_at_threshold] duration = 0.000 seconds
+2026-10-08 21:18:23,059 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_check.test_below_threshold] duration = 0.000 seconds
+2026-10-08 21:18:23,059 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,060 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [temp_alarm_get_status]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.000 seconds
+2026-10-08 21:18:23,060 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_get_status.test_status_after_init] duration = 0.000 seconds
+2026-10-08 21:18:23,060 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,061 - twister - DEBUG - OUTPUT: SUITE SKIP -   0.00% [temp_alarm_invalid_input]: pass = 0, fail = 0, skip = 4, total = 4 duration = 0.000 seconds
+2026-10-08 21:18:23,061 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_invalid_input.test_get_status_null] duration = 0.000 seconds
+2026-10-08 21:18:23,061 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_invalid_input.test_init_threshold_out_of_range] duration = 0.000 seconds
+2026-10-08 21:18:23,062 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_invalid_input.test_init_without_device] duration = 0.000 seconds
+2026-10-08 21:18:23,062 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_invalid_input.test_set_threshold_out_of_range] duration = 0.000 seconds
+2026-10-08 21:18:23,062 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,063 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [temp_alarm_reset]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.000 seconds
+2026-10-08 21:18:23,063 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_reset.test_reset_clears_state] duration = 0.000 seconds
+2026-10-08 21:18:23,063 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,064 - twister - DEBUG - OUTPUT: SUITE SKIP -   0.00% [temp_alarm_sensor_errors]: pass = 0, fail = 0, skip = 3, total = 3 duration = 0.000 seconds
+2026-10-08 21:18:23,064 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_sensor_errors.test_channel_get_error_propagates] duration = 0.000 seconds
+2026-10-08 21:18:23,064 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_sensor_errors.test_fail_then_recover] duration = 0.000 seconds
+2026-10-08 21:18:23,065 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_sensor_errors.test_fetch_error_propagates] duration = 0.000 seconds
+2026-10-08 21:18:23,067 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,068 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [temp_alarm_threshold]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.000 seconds
+2026-10-08 21:18:23,068 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_threshold.test_new_threshold_clears_alarm] duration = 0.000 seconds
+2026-10-08 21:18:23,068 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,069 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY END ------
+2026-10-08 21:18:23,069 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,069 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,070 - twister - DEBUG - OUTPUT: RunID: f6d4164aa0b7e7d9dee598b3e4af8ae7
+2026-10-08 21:18:23,070 - twister - DEBUG - OUTPUT: PROJECT EXECUTION SUCCESSFUL
+2026-10-08 21:18:23,072 - twister - DEBUG - Expected suite names:['temp_alarm_sensor_errors', 'temp_alarm_invalid_input', 'temp_alarm_get_status', 'temp_alarm_check', 'temp_alarm_threshold', 'temp_alarm_reset']
+2026-10-08 21:18:23,072 - twister - DEBUG - Detected suite names:['temp_alarm_check', 'temp_alarm_get_status', 'temp_alarm_invalid_input', 'temp_alarm_reset', 'temp_alarm_sensor_errors', 'temp_alarm_threshold']
+2026-10-08 21:18:23,073 - twister - DEBUG - run status: native_sim/native/host/gnu/homework.unit.temp_alarm.ordered passed
+2026-10-08 21:18:23,097 - twister - DEBUG - Test instance native_sim/native/host/gnu/homework.unit.temp_alarm already has 13 testcase(s) known: [<TestCase homework.unit.temp_alarm.temp_alarm_invalid_input.init_threshold_out_of_range with None>, <TestCase homework.unit.temp_alarm.temp_alarm_invalid_input.init_without_device with None>, <TestCase homework.unit.temp_alarm.temp_alarm_reset.reset_clears_state with None>, <TestCase homework.unit.temp_alarm.temp_alarm_sensor_errors.fetch_error_propagates with None>, <TestCase homework.unit.temp_alarm.temp_alarm_sensor_errors.fail_then_recover with None>, <TestCase homework.unit.temp_alarm.temp_alarm_check.above_threshold with None>, <TestCase homework.unit.temp_alarm.temp_alarm_threshold.new_threshold_clears_alarm with None>, <TestCase homework.unit.temp_alarm.temp_alarm_get_status.status_after_init with None>, <TestCase homework.unit.temp_alarm.temp_alarm_invalid_input.get_status_null with None>, <TestCase homework.unit.temp_alarm.temp_alarm_invalid_input.set_threshold_out_of_range with None>, <TestCase homework.unit.temp_alarm.temp_alarm_check.at_threshold with None>, <TestCase homework.unit.temp_alarm.temp_alarm_sensor_errors.channel_get_error_propagates with None>, <TestCase homework.unit.temp_alarm.temp_alarm_check.below_threshold with None>]
+2026-10-08 21:18:23,098 - twister - DEBUG - Detected 13 Ztest case(s): [homework.unit.temp_alarm.temp_alarm_reset.reset_clears_state, homework.unit.temp_alarm.temp_alarm_threshold.new_threshold_clears_alarm, homework.unit.temp_alarm.temp_alarm_check.above_threshold, homework.unit.temp_alarm.temp_alarm_check.at_threshold, homework.unit.temp_alarm.temp_alarm_check.below_threshold, homework.unit.temp_alarm.temp_alarm_get_status.status_after_init, homework.unit.temp_alarm.temp_alarm_invalid_input.set_threshold_out_of_range, homework.unit.temp_alarm.temp_alarm_invalid_input.init_threshold_out_of_range, homework.unit.temp_alarm.temp_alarm_invalid_input.init_without_device, homework.unit.temp_alarm.temp_alarm_invalid_input.get_status_null, homework.unit.temp_alarm.temp_alarm_sensor_errors.fail_then_recover, homework.unit.temp_alarm.temp_alarm_sensor_errors.channel_get_error_propagates, homework.unit.temp_alarm.temp_alarm_sensor_errors.fetch_error_propagates] in /home/zephyr/zephyrproject/zephyr/twister-out/native_sim_native/host_gnu/zephyr-intermediate/tests/temp_alarm/homework.unit.temp_alarm/zephyr/zephyr.elf
+2026-10-08 21:18:23,104 - twister - DEBUG - run test: native_sim/native/host/gnu/homework.unit.temp_alarm
+2026-10-08 21:18:23,104 - twister - DEBUG - Reset instance status from 'passed' to None before run.
+2026-10-08 21:18:23,104 - twister - DEBUG - Spawning process: /home/zephyr/zephyrproject/zephyr/twister-out/native_sim_native/host_gnu/zephyr-intermediate/tests/temp_alarm/homework.unit.temp_alarm/zephyr/zephyr.exe
+in directory: /home/zephyr/zephyrproject/zephyr/twister-out/native_sim_native/host_gnu/zephyr-intermediate/tests/temp_alarm/homework.unit.temp_alarm
+2026-10-08 21:18:23,105 - twister - DEBUG - Spawning BinaryHandler Thread for native_sim/native/host/gnu/homework.unit.temp_alarm
+2026-10-08 21:18:23,107 - twister - DEBUG - OUTPUT: *** Booting Zephyr OS build v4.4.0 ***
+2026-10-08 21:18:23,108 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_sensor_errors
+2026-10-08 21:18:23,108 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,108 - twister - DEBUG - OUTPUT: START - test_fail_then_recover
+2026-10-08 21:18:23,109 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,109 - twister - DEBUG - OUTPUT:  SKIP - test_fail_then_recover in 0.000 seconds
+2026-10-08 21:18:23,109 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,110 - twister - DEBUG - OUTPUT: START - test_channel_get_error_propagates
+2026-10-08 21:18:23,110 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,110 - twister - DEBUG - OUTPUT:  SKIP - test_channel_get_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,111 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,111 - twister - DEBUG - OUTPUT: START - test_fetch_error_propagates
+2026-10-08 21:18:23,111 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,112 - twister - DEBUG - OUTPUT:  SKIP - test_fetch_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,112 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,112 - twister - DEBUG - OUTPUT: START - test_fail_then_recover
+2026-10-08 21:18:23,113 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,113 - twister - DEBUG - OUTPUT:  SKIP - test_fail_then_recover in 0.000 seconds
+2026-10-08 21:18:23,113 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,114 - twister - DEBUG - OUTPUT: START - test_fetch_error_propagates
+2026-10-08 21:18:23,114 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,114 - twister - DEBUG - OUTPUT:  SKIP - test_fetch_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,115 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,115 - twister - DEBUG - OUTPUT: START - test_channel_get_error_propagates
+2026-10-08 21:18:23,115 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,116 - twister - DEBUG - OUTPUT:  SKIP - test_channel_get_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,116 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,116 - twister - DEBUG - OUTPUT: START - test_channel_get_error_propagates
+2026-10-08 21:18:23,117 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,117 - twister - DEBUG - OUTPUT:  SKIP - test_channel_get_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,117 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,118 - twister - DEBUG - OUTPUT: START - test_fail_then_recover
+2026-10-08 21:18:23,118 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,118 - twister - DEBUG - OUTPUT:  SKIP - test_fail_then_recover in 0.000 seconds
+2026-10-08 21:18:23,119 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,119 - twister - DEBUG - OUTPUT: START - test_fetch_error_propagates
+2026-10-08 21:18:23,119 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,120 - twister - DEBUG - OUTPUT:  SKIP - test_fetch_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,120 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,120 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_sensor_errors succeeded
+2026-10-08 21:18:23,121 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_sensor_errors
+2026-10-08 21:18:23,121 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,122 - twister - DEBUG - OUTPUT: START - test_fail_then_recover
+2026-10-08 21:18:23,122 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,123 - twister - DEBUG - OUTPUT:  SKIP - test_fail_then_recover in 0.000 seconds
+2026-10-08 21:18:23,123 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,123 - twister - DEBUG - OUTPUT: START - test_channel_get_error_propagates
+2026-10-08 21:18:23,124 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,124 - twister - DEBUG - OUTPUT:  SKIP - test_channel_get_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,125 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,125 - twister - DEBUG - OUTPUT: START - test_fetch_error_propagates
+2026-10-08 21:18:23,125 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,126 - twister - DEBUG - OUTPUT:  SKIP - test_fetch_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,127 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,127 - twister - DEBUG - OUTPUT: START - test_fail_then_recover
+2026-10-08 21:18:23,128 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,128 - twister - DEBUG - OUTPUT:  SKIP - test_fail_then_recover in 0.000 seconds
+2026-10-08 21:18:23,129 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,129 - twister - DEBUG - OUTPUT: START - test_channel_get_error_propagates
+2026-10-08 21:18:23,130 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,130 - twister - DEBUG - OUTPUT:  SKIP - test_channel_get_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,131 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,131 - twister - DEBUG - OUTPUT: START - test_fetch_error_propagates
+2026-10-08 21:18:23,132 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,132 - twister - DEBUG - OUTPUT:  SKIP - test_fetch_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,132 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,133 - twister - DEBUG - OUTPUT: START - test_channel_get_error_propagates
+2026-10-08 21:18:23,133 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,134 - twister - DEBUG - OUTPUT:  SKIP - test_channel_get_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,134 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,135 - twister - DEBUG - OUTPUT: START - test_fetch_error_propagates
+2026-10-08 21:18:23,135 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,135 - twister - DEBUG - OUTPUT:  SKIP - test_fetch_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,136 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,137 - twister - DEBUG - OUTPUT: START - test_fail_then_recover
+2026-10-08 21:18:23,138 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,138 - twister - DEBUG - OUTPUT:  SKIP - test_fail_then_recover in 0.000 seconds
+2026-10-08 21:18:23,139 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,139 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_sensor_errors succeeded
+2026-10-08 21:18:23,139 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_sensor_errors
+2026-10-08 21:18:23,140 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,140 - twister - DEBUG - OUTPUT: START - test_fail_then_recover
+2026-10-08 21:18:23,140 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,141 - twister - DEBUG - OUTPUT:  SKIP - test_fail_then_recover in 0.000 seconds
+2026-10-08 21:18:23,141 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,141 - twister - DEBUG - OUTPUT: START - test_channel_get_error_propagates
+2026-10-08 21:18:23,142 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,142 - twister - DEBUG - OUTPUT:  SKIP - test_channel_get_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,142 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,143 - twister - DEBUG - OUTPUT: START - test_fetch_error_propagates
+2026-10-08 21:18:23,143 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,143 - twister - DEBUG - OUTPUT:  SKIP - test_fetch_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,144 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,144 - twister - DEBUG - OUTPUT: START - test_channel_get_error_propagates
+2026-10-08 21:18:23,144 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,145 - twister - DEBUG - OUTPUT:  SKIP - test_channel_get_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,145 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,145 - twister - DEBUG - OUTPUT: START - test_fetch_error_propagates
+2026-10-08 21:18:23,146 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,146 - twister - DEBUG - OUTPUT:  SKIP - test_fetch_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,146 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,147 - twister - DEBUG - OUTPUT: START - test_fail_then_recover
+2026-10-08 21:18:23,147 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,147 - twister - DEBUG - OUTPUT:  SKIP - test_fail_then_recover in 0.000 seconds
+2026-10-08 21:18:23,148 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,148 - twister - DEBUG - OUTPUT: START - test_fail_then_recover
+2026-10-08 21:18:23,148 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,149 - twister - DEBUG - OUTPUT:  SKIP - test_fail_then_recover in 0.000 seconds
+2026-10-08 21:18:23,149 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,149 - twister - DEBUG - OUTPUT: START - test_fetch_error_propagates
+2026-10-08 21:18:23,150 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,150 - twister - DEBUG - OUTPUT:  SKIP - test_fetch_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,150 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,151 - twister - DEBUG - OUTPUT: START - test_channel_get_error_propagates
+2026-10-08 21:18:23,151 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,151 - twister - DEBUG - OUTPUT:  SKIP - test_channel_get_error_propagates in 0.000 seconds
+2026-10-08 21:18:23,151 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,152 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_sensor_errors succeeded
+2026-10-08 21:18:23,152 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_reset
+2026-10-08 21:18:23,152 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,153 - twister - DEBUG - OUTPUT: START - test_reset_clears_state
+2026-10-08 21:18:23,153 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,153 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,154 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,154 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,154 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Alarm state reset[0m
+2026-10-08 21:18:23,155 - twister - DEBUG - OUTPUT:  PASS - test_reset_clears_state in 0.000 seconds
+2026-10-08 21:18:23,155 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,155 - twister - DEBUG - OUTPUT: START - test_reset_clears_state
+2026-10-08 21:18:23,155 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,156 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,156 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,156 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,157 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Alarm state reset[0m
+2026-10-08 21:18:23,157 - twister - DEBUG - OUTPUT:  PASS - test_reset_clears_state in 0.000 seconds
+2026-10-08 21:18:23,157 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,158 - twister - DEBUG - OUTPUT: START - test_reset_clears_state
+2026-10-08 21:18:23,158 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,158 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,159 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,159 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,159 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Alarm state reset[0m
+2026-10-08 21:18:23,160 - twister - DEBUG - OUTPUT:  PASS - test_reset_clears_state in 0.000 seconds
+2026-10-08 21:18:23,160 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,160 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_reset succeeded
+2026-10-08 21:18:23,161 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_reset
+2026-10-08 21:18:23,161 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,161 - twister - DEBUG - OUTPUT: START - test_reset_clears_state
+2026-10-08 21:18:23,162 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,162 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,162 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,163 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,163 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Alarm state reset[0m
+2026-10-08 21:18:23,163 - twister - DEBUG - OUTPUT:  PASS - test_reset_clears_state in 0.000 seconds
+2026-10-08 21:18:23,164 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,164 - twister - DEBUG - OUTPUT: START - test_reset_clears_state
+2026-10-08 21:18:23,164 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,165 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,165 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,165 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,166 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Alarm state reset[0m
+2026-10-08 21:18:23,166 - twister - DEBUG - OUTPUT:  PASS - test_reset_clears_state in 0.000 seconds
+2026-10-08 21:18:23,166 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,166 - twister - DEBUG - OUTPUT: START - test_reset_clears_state
+2026-10-08 21:18:23,167 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,167 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,167 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,168 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,168 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Alarm state reset[0m
+2026-10-08 21:18:23,169 - twister - DEBUG - OUTPUT:  PASS - test_reset_clears_state in 0.000 seconds
+2026-10-08 21:18:23,169 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,169 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_reset succeeded
+2026-10-08 21:18:23,170 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_reset
+2026-10-08 21:18:23,170 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,170 - twister - DEBUG - OUTPUT: START - test_reset_clears_state
+2026-10-08 21:18:23,171 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,171 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,171 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,172 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,172 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Alarm state reset[0m
+2026-10-08 21:18:23,172 - twister - DEBUG - OUTPUT:  PASS - test_reset_clears_state in 0.000 seconds
+2026-10-08 21:18:23,172 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,173 - twister - DEBUG - OUTPUT: START - test_reset_clears_state
+2026-10-08 21:18:23,173 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,173 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,174 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,174 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,174 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Alarm state reset[0m
+2026-10-08 21:18:23,174 - twister - DEBUG - OUTPUT:  PASS - test_reset_clears_state in 0.000 seconds
+2026-10-08 21:18:23,174 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,175 - twister - DEBUG - OUTPUT: START - test_reset_clears_state
+2026-10-08 21:18:23,175 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,175 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,176 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,176 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,176 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Alarm state reset[0m
+2026-10-08 21:18:23,177 - twister - DEBUG - OUTPUT:  PASS - test_reset_clears_state in 0.000 seconds
+2026-10-08 21:18:23,177 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,177 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_reset succeeded
+2026-10-08 21:18:23,178 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_get_status
+2026-10-08 21:18:23,178 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,178 - twister - DEBUG - OUTPUT: START - test_status_after_init
+2026-10-08 21:18:23,179 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,179 - twister - DEBUG - OUTPUT:  PASS - test_status_after_init in 0.000 seconds
+2026-10-08 21:18:23,179 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,180 - twister - DEBUG - OUTPUT: START - test_status_after_init
+2026-10-08 21:18:23,180 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,181 - twister - DEBUG - OUTPUT:  PASS - test_status_after_init in 0.000 seconds
+2026-10-08 21:18:23,181 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,181 - twister - DEBUG - OUTPUT: START - test_status_after_init
+2026-10-08 21:18:23,182 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,182 - twister - DEBUG - OUTPUT:  PASS - test_status_after_init in 0.000 seconds
+2026-10-08 21:18:23,182 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,183 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_get_status succeeded
+2026-10-08 21:18:23,183 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_get_status
+2026-10-08 21:18:23,183 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,184 - twister - DEBUG - OUTPUT: START - test_status_after_init
+2026-10-08 21:18:23,184 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,184 - twister - DEBUG - OUTPUT:  PASS - test_status_after_init in 0.000 seconds
+2026-10-08 21:18:23,185 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,185 - twister - DEBUG - OUTPUT: START - test_status_after_init
+2026-10-08 21:18:23,186 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,186 - twister - DEBUG - OUTPUT:  PASS - test_status_after_init in 0.000 seconds
+2026-10-08 21:18:23,186 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,187 - twister - DEBUG - OUTPUT: START - test_status_after_init
+2026-10-08 21:18:23,187 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,187 - twister - DEBUG - OUTPUT:  PASS - test_status_after_init in 0.000 seconds
+2026-10-08 21:18:23,188 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,188 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_get_status succeeded
+2026-10-08 21:18:23,188 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_get_status
+2026-10-08 21:18:23,188 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,189 - twister - DEBUG - OUTPUT: START - test_status_after_init
+2026-10-08 21:18:23,189 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,189 - twister - DEBUG - OUTPUT:  PASS - test_status_after_init in 0.000 seconds
+2026-10-08 21:18:23,190 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,190 - twister - DEBUG - OUTPUT: START - test_status_after_init
+2026-10-08 21:18:23,190 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,191 - twister - DEBUG - OUTPUT:  PASS - test_status_after_init in 0.000 seconds
+2026-10-08 21:18:23,191 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,191 - twister - DEBUG - OUTPUT: START - test_status_after_init
+2026-10-08 21:18:23,192 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,192 - twister - DEBUG - OUTPUT:  PASS - test_status_after_init in 0.000 seconds
+2026-10-08 21:18:23,192 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,193 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_get_status succeeded
+2026-10-08 21:18:23,193 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_threshold
+2026-10-08 21:18:23,193 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,194 - twister - DEBUG - OUTPUT: START - test_new_threshold_clears_alarm
+2026-10-08 21:18:23,194 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,194 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,195 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Threshold updated to 50 C[0m
+2026-10-08 21:18:23,195 - twister - DEBUG - OUTPUT:  PASS - test_new_threshold_clears_alarm in 0.000 seconds
+2026-10-08 21:18:23,195 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,196 - twister - DEBUG - OUTPUT: START - test_new_threshold_clears_alarm
+2026-10-08 21:18:23,196 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,196 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,197 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Threshold updated to 50 C[0m
+2026-10-08 21:18:23,197 - twister - DEBUG - OUTPUT:  PASS - test_new_threshold_clears_alarm in 0.000 seconds
+2026-10-08 21:18:23,197 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,198 - twister - DEBUG - OUTPUT: START - test_new_threshold_clears_alarm
+2026-10-08 21:18:23,198 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,198 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,199 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Threshold updated to 50 C[0m
+2026-10-08 21:18:23,199 - twister - DEBUG - OUTPUT:  PASS - test_new_threshold_clears_alarm in 0.000 seconds
+2026-10-08 21:18:23,199 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,200 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_threshold succeeded
+2026-10-08 21:18:23,200 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_threshold
+2026-10-08 21:18:23,200 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,201 - twister - DEBUG - OUTPUT: START - test_new_threshold_clears_alarm
+2026-10-08 21:18:23,201 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,202 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,202 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Threshold updated to 50 C[0m
+2026-10-08 21:18:23,202 - twister - DEBUG - OUTPUT:  PASS - test_new_threshold_clears_alarm in 0.000 seconds
+2026-10-08 21:18:23,202 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,203 - twister - DEBUG - OUTPUT: START - test_new_threshold_clears_alarm
+2026-10-08 21:18:23,203 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,203 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,204 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Threshold updated to 50 C[0m
+2026-10-08 21:18:23,204 - twister - DEBUG - OUTPUT:  PASS - test_new_threshold_clears_alarm in 0.000 seconds
+2026-10-08 21:18:23,204 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,205 - twister - DEBUG - OUTPUT: START - test_new_threshold_clears_alarm
+2026-10-08 21:18:23,205 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,205 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,206 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Threshold updated to 50 C[0m
+2026-10-08 21:18:23,206 - twister - DEBUG - OUTPUT:  PASS - test_new_threshold_clears_alarm in 0.000 seconds
+2026-10-08 21:18:23,206 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,207 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_threshold succeeded
+2026-10-08 21:18:23,207 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_threshold
+2026-10-08 21:18:23,207 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,208 - twister - DEBUG - OUTPUT: START - test_new_threshold_clears_alarm
+2026-10-08 21:18:23,208 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,208 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,209 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Threshold updated to 50 C[0m
+2026-10-08 21:18:23,209 - twister - DEBUG - OUTPUT:  PASS - test_new_threshold_clears_alarm in 0.000 seconds
+2026-10-08 21:18:23,209 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,209 - twister - DEBUG - OUTPUT: START - test_new_threshold_clears_alarm
+2026-10-08 21:18:23,209 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,210 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,210 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Threshold updated to 50 C[0m
+2026-10-08 21:18:23,210 - twister - DEBUG - OUTPUT:  PASS - test_new_threshold_clears_alarm in 0.000 seconds
+2026-10-08 21:18:23,211 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,211 - twister - DEBUG - OUTPUT: START - test_new_threshold_clears_alarm
+2026-10-08 21:18:23,211 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,212 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,212 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Threshold updated to 50 C[0m
+2026-10-08 21:18:23,213 - twister - DEBUG - OUTPUT:  PASS - test_new_threshold_clears_alarm in 0.000 seconds
+2026-10-08 21:18:23,213 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,213 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_threshold succeeded
+2026-10-08 21:18:23,214 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_check
+2026-10-08 21:18:23,214 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,214 - twister - DEBUG - OUTPUT: START - test_below_threshold
+2026-10-08 21:18:23,215 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,215 - twister - DEBUG - OUTPUT:  PASS - test_below_threshold in 0.000 seconds
+2026-10-08 21:18:23,215 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,216 - twister - DEBUG - OUTPUT: START - test_at_threshold
+2026-10-08 21:18:23,216 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,216 - twister - DEBUG - OUTPUT:  PASS - test_at_threshold in 0.000 seconds
+2026-10-08 21:18:23,217 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,217 - twister - DEBUG - OUTPUT: START - test_above_threshold
+2026-10-08 21:18:23,217 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,218 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,218 - twister - DEBUG - OUTPUT:  PASS - test_above_threshold in 0.000 seconds
+2026-10-08 21:18:23,219 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,219 - twister - DEBUG - OUTPUT: START - test_at_threshold
+2026-10-08 21:18:23,219 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,220 - twister - DEBUG - OUTPUT:  PASS - test_at_threshold in 0.000 seconds
+2026-10-08 21:18:23,220 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,220 - twister - DEBUG - OUTPUT: START - test_below_threshold
+2026-10-08 21:18:23,221 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,221 - twister - DEBUG - OUTPUT:  PASS - test_below_threshold in 0.000 seconds
+2026-10-08 21:18:23,221 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,222 - twister - DEBUG - OUTPUT: START - test_above_threshold
+2026-10-08 21:18:23,222 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,223 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,223 - twister - DEBUG - OUTPUT:  PASS - test_above_threshold in 0.000 seconds
+2026-10-08 21:18:23,223 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,224 - twister - DEBUG - OUTPUT: START - test_below_threshold
+2026-10-08 21:18:23,224 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,224 - twister - DEBUG - OUTPUT:  PASS - test_below_threshold in 0.000 seconds
+2026-10-08 21:18:23,225 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,225 - twister - DEBUG - OUTPUT: START - test_above_threshold
+2026-10-08 21:18:23,225 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,226 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,226 - twister - DEBUG - OUTPUT:  PASS - test_above_threshold in 0.000 seconds
+2026-10-08 21:18:23,226 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,227 - twister - DEBUG - OUTPUT: START - test_at_threshold
+2026-10-08 21:18:23,227 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,228 - twister - DEBUG - OUTPUT:  PASS - test_at_threshold in 0.000 seconds
+2026-10-08 21:18:23,228 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,228 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_check succeeded
+2026-10-08 21:18:23,229 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_check
+2026-10-08 21:18:23,229 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,229 - twister - DEBUG - OUTPUT: START - test_at_threshold
+2026-10-08 21:18:23,230 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,230 - twister - DEBUG - OUTPUT:  PASS - test_at_threshold in 0.000 seconds
+2026-10-08 21:18:23,230 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,231 - twister - DEBUG - OUTPUT: START - test_above_threshold
+2026-10-08 21:18:23,231 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,231 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,232 - twister - DEBUG - OUTPUT:  PASS - test_above_threshold in 0.000 seconds
+2026-10-08 21:18:23,232 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,232 - twister - DEBUG - OUTPUT: START - test_below_threshold
+2026-10-08 21:18:23,233 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,233 - twister - DEBUG - OUTPUT:  PASS - test_below_threshold in 0.000 seconds
+2026-10-08 21:18:23,234 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,234 - twister - DEBUG - OUTPUT: START - test_at_threshold
+2026-10-08 21:18:23,234 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,235 - twister - DEBUG - OUTPUT:  PASS - test_at_threshold in 0.000 seconds
+2026-10-08 21:18:23,235 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,235 - twister - DEBUG - OUTPUT: START - test_above_threshold
+2026-10-08 21:18:23,236 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,236 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,236 - twister - DEBUG - OUTPUT:  PASS - test_above_threshold in 0.000 seconds
+2026-10-08 21:18:23,237 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,237 - twister - DEBUG - OUTPUT: START - test_below_threshold
+2026-10-08 21:18:23,237 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,238 - twister - DEBUG - OUTPUT:  PASS - test_below_threshold in 0.000 seconds
+2026-10-08 21:18:23,238 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,238 - twister - DEBUG - OUTPUT: START - test_above_threshold
+2026-10-08 21:18:23,239 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,239 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,240 - twister - DEBUG - OUTPUT:  PASS - test_above_threshold in 0.000 seconds
+2026-10-08 21:18:23,240 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,240 - twister - DEBUG - OUTPUT: START - test_below_threshold
+2026-10-08 21:18:23,240 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,241 - twister - DEBUG - OUTPUT:  PASS - test_below_threshold in 0.000 seconds
+2026-10-08 21:18:23,241 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,241 - twister - DEBUG - OUTPUT: START - test_at_threshold
+2026-10-08 21:18:23,242 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,242 - twister - DEBUG - OUTPUT:  PASS - test_at_threshold in 0.000 seconds
+2026-10-08 21:18:23,242 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,243 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_check succeeded
+2026-10-08 21:18:23,243 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_check
+2026-10-08 21:18:23,243 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,243 - twister - DEBUG - OUTPUT: START - test_at_threshold
+2026-10-08 21:18:23,244 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,244 - twister - DEBUG - OUTPUT:  PASS - test_at_threshold in 0.000 seconds
+2026-10-08 21:18:23,244 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,246 - twister - DEBUG - OUTPUT: START - test_below_threshold
+2026-10-08 21:18:23,247 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,247 - twister - DEBUG - OUTPUT:  PASS - test_below_threshold in 0.000 seconds
+2026-10-08 21:18:23,247 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,248 - twister - DEBUG - OUTPUT: START - test_above_threshold
+2026-10-08 21:18:23,248 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,249 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,249 - twister - DEBUG - OUTPUT:  PASS - test_above_threshold in 0.000 seconds
+2026-10-08 21:18:23,249 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,250 - twister - DEBUG - OUTPUT: START - test_below_threshold
+2026-10-08 21:18:23,250 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,250 - twister - DEBUG - OUTPUT:  PASS - test_below_threshold in 0.000 seconds
+2026-10-08 21:18:23,251 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,251 - twister - DEBUG - OUTPUT: START - test_at_threshold
+2026-10-08 21:18:23,252 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,252 - twister - DEBUG - OUTPUT:  PASS - test_at_threshold in 0.000 seconds
+2026-10-08 21:18:23,252 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,253 - twister - DEBUG - OUTPUT: START - test_above_threshold
+2026-10-08 21:18:23,253 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,253 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,253 - twister - DEBUG - OUTPUT:  PASS - test_above_threshold in 0.000 seconds
+2026-10-08 21:18:23,254 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,254 - twister - DEBUG - OUTPUT: START - test_at_threshold
+2026-10-08 21:18:23,254 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,255 - twister - DEBUG - OUTPUT:  PASS - test_at_threshold in 0.000 seconds
+2026-10-08 21:18:23,255 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,255 - twister - DEBUG - OUTPUT: START - test_above_threshold
+2026-10-08 21:18:23,256 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,256 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [1;33m<wrn> temp_alarm: Alarm! temp=40 > threshold=30[0m
+2026-10-08 21:18:23,257 - twister - DEBUG - OUTPUT:  PASS - test_above_threshold in 0.000 seconds
+2026-10-08 21:18:23,257 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,257 - twister - DEBUG - OUTPUT: START - test_below_threshold
+2026-10-08 21:18:23,258 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,258 - twister - DEBUG - OUTPUT:  PASS - test_below_threshold in 0.000 seconds
+2026-10-08 21:18:23,258 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,259 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_check succeeded
+2026-10-08 21:18:23,259 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_invalid_input
+2026-10-08 21:18:23,259 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,259 - twister - DEBUG - OUTPUT: START - test_get_status_null
+2026-10-08 21:18:23,260 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,260 - twister - DEBUG - OUTPUT:  SKIP - test_get_status_null in 0.000 seconds
+2026-10-08 21:18:23,261 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,261 - twister - DEBUG - OUTPUT: START - test_init_without_device
+2026-10-08 21:18:23,261 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,262 - twister - DEBUG - OUTPUT:  SKIP - test_init_without_device in 0.000 seconds
+2026-10-08 21:18:23,262 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,262 - twister - DEBUG - OUTPUT: START - test_set_threshold_out_of_range
+2026-10-08 21:18:23,263 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,263 - twister - DEBUG - OUTPUT:  SKIP - test_set_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,263 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,264 - twister - DEBUG - OUTPUT: START - test_init_threshold_out_of_range
+2026-10-08 21:18:23,264 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,264 - twister - DEBUG - OUTPUT:  SKIP - test_init_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,265 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,265 - twister - DEBUG - OUTPUT: START - test_get_status_null
+2026-10-08 21:18:23,265 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,266 - twister - DEBUG - OUTPUT:  SKIP - test_get_status_null in 0.000 seconds
+2026-10-08 21:18:23,266 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,266 - twister - DEBUG - OUTPUT: START - test_set_threshold_out_of_range
+2026-10-08 21:18:23,267 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,267 - twister - DEBUG - OUTPUT:  SKIP - test_set_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,268 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,268 - twister - DEBUG - OUTPUT: START - test_init_threshold_out_of_range
+2026-10-08 21:18:23,268 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,269 - twister - DEBUG - OUTPUT:  SKIP - test_init_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,269 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,269 - twister - DEBUG - OUTPUT: START - test_init_without_device
+2026-10-08 21:18:23,270 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,270 - twister - DEBUG - OUTPUT:  SKIP - test_init_without_device in 0.000 seconds
+2026-10-08 21:18:23,271 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,271 - twister - DEBUG - OUTPUT: START - test_set_threshold_out_of_range
+2026-10-08 21:18:23,271 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,272 - twister - DEBUG - OUTPUT:  SKIP - test_set_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,272 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,272 - twister - DEBUG - OUTPUT: START - test_init_threshold_out_of_range
+2026-10-08 21:18:23,273 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,273 - twister - DEBUG - OUTPUT:  SKIP - test_init_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,273 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,274 - twister - DEBUG - OUTPUT: START - test_get_status_null
+2026-10-08 21:18:23,274 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,274 - twister - DEBUG - OUTPUT:  SKIP - test_get_status_null in 0.000 seconds
+2026-10-08 21:18:23,275 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,275 - twister - DEBUG - OUTPUT: START - test_init_without_device
+2026-10-08 21:18:23,276 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,276 - twister - DEBUG - OUTPUT:  SKIP - test_init_without_device in 0.000 seconds
+2026-10-08 21:18:23,276 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,276 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_invalid_input succeeded
+2026-10-08 21:18:23,277 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_invalid_input
+2026-10-08 21:18:23,277 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,277 - twister - DEBUG - OUTPUT: START - test_init_threshold_out_of_range
+2026-10-08 21:18:23,278 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,278 - twister - DEBUG - OUTPUT:  SKIP - test_init_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,279 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,279 - twister - DEBUG - OUTPUT: START - test_set_threshold_out_of_range
+2026-10-08 21:18:23,279 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,279 - twister - DEBUG - OUTPUT:  SKIP - test_set_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,280 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,280 - twister - DEBUG - OUTPUT: START - test_init_without_device
+2026-10-08 21:18:23,280 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,281 - twister - DEBUG - OUTPUT:  SKIP - test_init_without_device in 0.000 seconds
+2026-10-08 21:18:23,281 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,281 - twister - DEBUG - OUTPUT: START - test_get_status_null
+2026-10-08 21:18:23,281 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,282 - twister - DEBUG - OUTPUT:  SKIP - test_get_status_null in 0.000 seconds
+2026-10-08 21:18:23,282 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,283 - twister - DEBUG - OUTPUT: START - test_get_status_null
+2026-10-08 21:18:23,283 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,283 - twister - DEBUG - OUTPUT:  SKIP - test_get_status_null in 0.000 seconds
+2026-10-08 21:18:23,284 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,284 - twister - DEBUG - OUTPUT: START - test_set_threshold_out_of_range
+2026-10-08 21:18:23,284 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,285 - twister - DEBUG - OUTPUT:  SKIP - test_set_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,285 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,285 - twister - DEBUG - OUTPUT: START - test_init_threshold_out_of_range
+2026-10-08 21:18:23,286 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,286 - twister - DEBUG - OUTPUT:  SKIP - test_init_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,287 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,287 - twister - DEBUG - OUTPUT: START - test_init_without_device
+2026-10-08 21:18:23,287 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,288 - twister - DEBUG - OUTPUT:  SKIP - test_init_without_device in 0.000 seconds
+2026-10-08 21:18:23,288 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,288 - twister - DEBUG - OUTPUT: START - test_get_status_null
+2026-10-08 21:18:23,289 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,289 - twister - DEBUG - OUTPUT:  SKIP - test_get_status_null in 0.000 seconds
+2026-10-08 21:18:23,289 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,290 - twister - DEBUG - OUTPUT: START - test_init_threshold_out_of_range
+2026-10-08 21:18:23,290 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,290 - twister - DEBUG - OUTPUT:  SKIP - test_init_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,291 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,291 - twister - DEBUG - OUTPUT: START - test_set_threshold_out_of_range
+2026-10-08 21:18:23,291 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,292 - twister - DEBUG - OUTPUT:  SKIP - test_set_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,292 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,292 - twister - DEBUG - OUTPUT: START - test_init_without_device
+2026-10-08 21:18:23,293 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,293 - twister - DEBUG - OUTPUT:  SKIP - test_init_without_device in 0.000 seconds
+2026-10-08 21:18:23,293 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,294 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_invalid_input succeeded
+2026-10-08 21:18:23,294 - twister - DEBUG - OUTPUT: Running TESTSUITE temp_alarm_invalid_input
+2026-10-08 21:18:23,294 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,295 - twister - DEBUG - OUTPUT: START - test_set_threshold_out_of_range
+2026-10-08 21:18:23,295 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,295 - twister - DEBUG - OUTPUT:  SKIP - test_set_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,296 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,296 - twister - DEBUG - OUTPUT: START - test_init_threshold_out_of_range
+2026-10-08 21:18:23,296 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,297 - twister - DEBUG - OUTPUT:  SKIP - test_init_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,297 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,297 - twister - DEBUG - OUTPUT: START - test_get_status_null
+2026-10-08 21:18:23,298 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,298 - twister - DEBUG - OUTPUT:  SKIP - test_get_status_null in 0.000 seconds
+2026-10-08 21:18:23,298 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,299 - twister - DEBUG - OUTPUT: START - test_init_without_device
+2026-10-08 21:18:23,299 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,299 - twister - DEBUG - OUTPUT:  SKIP - test_init_without_device in 0.000 seconds
+2026-10-08 21:18:23,300 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,300 - twister - DEBUG - OUTPUT: START - test_get_status_null
+2026-10-08 21:18:23,300 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,301 - twister - DEBUG - OUTPUT:  SKIP - test_get_status_null in 0.000 seconds
+2026-10-08 21:18:23,301 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,301 - twister - DEBUG - OUTPUT: START - test_init_threshold_out_of_range
+2026-10-08 21:18:23,302 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,302 - twister - DEBUG - OUTPUT:  SKIP - test_init_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,302 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,303 - twister - DEBUG - OUTPUT: START - test_init_without_device
+2026-10-08 21:18:23,303 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,303 - twister - DEBUG - OUTPUT:  SKIP - test_init_without_device in 0.000 seconds
+2026-10-08 21:18:23,304 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,304 - twister - DEBUG - OUTPUT: START - test_set_threshold_out_of_range
+2026-10-08 21:18:23,304 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,305 - twister - DEBUG - OUTPUT:  SKIP - test_set_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,305 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,305 - twister - DEBUG - OUTPUT: START - test_set_threshold_out_of_range
+2026-10-08 21:18:23,306 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,306 - twister - DEBUG - OUTPUT:  SKIP - test_set_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,306 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,307 - twister - DEBUG - OUTPUT: START - test_init_without_device
+2026-10-08 21:18:23,307 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,307 - twister - DEBUG - OUTPUT:  SKIP - test_init_without_device in 0.000 seconds
+2026-10-08 21:18:23,308 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,308 - twister - DEBUG - OUTPUT: START - test_init_threshold_out_of_range
+2026-10-08 21:18:23,309 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,310 - twister - DEBUG - OUTPUT:  SKIP - test_init_threshold_out_of_range in 0.000 seconds
+2026-10-08 21:18:23,310 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,310 - twister - DEBUG - OUTPUT: START - test_get_status_null
+2026-10-08 21:18:23,311 - twister - DEBUG - OUTPUT: [00:00:00.000,000] [0m<inf> temp_alarm: Temperature alarm initialized (threshold=30 C)[0m
+2026-10-08 21:18:23,311 - twister - DEBUG - OUTPUT:  SKIP - test_get_status_null in 0.000 seconds
+2026-10-08 21:18:23,312 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,312 - twister - DEBUG - OUTPUT: TESTSUITE temp_alarm_invalid_input succeeded
+2026-10-08 21:18:23,312 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,312 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY START ------
+2026-10-08 21:18:23,313 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,313 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [temp_alarm_check]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.000 seconds
+2026-10-08 21:18:23,313 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_check.test_above_threshold] duration = 0.000 seconds
+2026-10-08 21:18:23,314 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_check.test_at_threshold] duration = 0.000 seconds
+2026-10-08 21:18:23,314 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_check.test_below_threshold] duration = 0.000 seconds
+2026-10-08 21:18:23,314 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,315 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [temp_alarm_get_status]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.000 seconds
+2026-10-08 21:18:23,315 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_get_status.test_status_after_init] duration = 0.000 seconds
+2026-10-08 21:18:23,316 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,316 - twister - DEBUG - OUTPUT: SUITE SKIP -   0.00% [temp_alarm_invalid_input]: pass = 0, fail = 0, skip = 4, total = 4 duration = 0.000 seconds
+2026-10-08 21:18:23,316 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_invalid_input.test_get_status_null] duration = 0.000 seconds
+2026-10-08 21:18:23,317 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_invalid_input.test_init_threshold_out_of_range] duration = 0.000 seconds
+2026-10-08 21:18:23,317 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_invalid_input.test_init_without_device] duration = 0.000 seconds
+2026-10-08 21:18:23,317 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_invalid_input.test_set_threshold_out_of_range] duration = 0.000 seconds
+2026-10-08 21:18:23,318 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,318 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [temp_alarm_reset]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.000 seconds
+2026-10-08 21:18:23,318 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_reset.test_reset_clears_state] duration = 0.000 seconds
+2026-10-08 21:18:23,318 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,318 - twister - DEBUG - OUTPUT: SUITE SKIP -   0.00% [temp_alarm_sensor_errors]: pass = 0, fail = 0, skip = 3, total = 3 duration = 0.000 seconds
+2026-10-08 21:18:23,319 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_sensor_errors.test_channel_get_error_propagates] duration = 0.000 seconds
+2026-10-08 21:18:23,319 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_sensor_errors.test_fail_then_recover] duration = 0.000 seconds
+2026-10-08 21:18:23,319 - twister - DEBUG - OUTPUT:  - SKIP - [temp_alarm_sensor_errors.test_fetch_error_propagates] duration = 0.000 seconds
+2026-10-08 21:18:23,320 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,320 - twister - DEBUG - OUTPUT: SUITE PASS - 100.00% [temp_alarm_threshold]: pass = 1, fail = 0, skip = 0, total = 1 duration = 0.000 seconds
+2026-10-08 21:18:23,321 - twister - DEBUG - OUTPUT:  - PASS - [temp_alarm_threshold.test_new_threshold_clears_alarm] duration = 0.000 seconds
+2026-10-08 21:18:23,321 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,321 - twister - DEBUG - OUTPUT: ------ TESTSUITE SUMMARY END ------
+2026-10-08 21:18:23,322 - twister - DEBUG - OUTPUT: 
+2026-10-08 21:18:23,322 - twister - DEBUG - OUTPUT: ===================================================================
+2026-10-08 21:18:23,322 - twister - DEBUG - OUTPUT: RunID: d6e1bb4e9746cc9da687246df0f7fe90
+2026-10-08 21:18:23,323 - twister - DEBUG - OUTPUT: PROJECT EXECUTION SUCCESSFUL
+2026-10-08 21:18:23,325 - twister - DEBUG - Expected suite names:['temp_alarm_sensor_errors', 'temp_alarm_invalid_input', 'temp_alarm_get_status', 'temp_alarm_check', 'temp_alarm_threshold', 'temp_alarm_reset']
+2026-10-08 21:18:23,325 - twister - DEBUG - Detected suite names:['temp_alarm_sensor_errors', 'temp_alarm_reset', 'temp_alarm_get_status', 'temp_alarm_threshold', 'temp_alarm_check', 'temp_alarm_invalid_input']
+2026-10-08 21:18:23,325 - twister - DEBUG - run status: native_sim/native/host/gnu/homework.unit.temp_alarm passed
+2026-10-08 21:18:23,337 - twister - INFO - 2 test scenarios (2 configurations) selected, 0 configurations filtered (0 by static filter, 0 at runtime).
+2026-10-08 21:18:23,348 - twister - INFO - [32m2 of 2[39m executed test configurations passed (100.00%), 0 built (not run), 0 failed, 0 errored, with no warnings in 17.15 seconds.
+2026-10-08 21:18:23,348 - twister - INFO - 12 of 12 executed test cases passed (100.00%) on 1 out of total 1473 platforms (0.07%).
+2026-10-08 21:18:23,348 - twister - INFO - 14 selected test cases not executed: 14 skipped.
+2026-10-08 21:18:23,348 - twister - INFO - [32m2[39m test configurations executed on platforms, [36m0[39m test configurations were only built.
+2026-10-08 21:18:23,348 - twister - INFO - Saving reports...
+2026-10-08 21:18:23,348 - twister - INFO - Writing JSON report /home/zephyr/zephyrproject/zephyr/twister-out/twister.json
+2026-10-08 21:18:23,349 - twister - INFO - Writing xunit report /home/zephyr/zephyrproject/zephyr/twister-out/twister.xml...
+2026-10-08 21:18:23,350 - twister - INFO - Writing xunit report /home/zephyr/zephyrproject/zephyr/twister-out/twister_report.xml...
+2026-10-08 21:18:23,352 - twister - INFO - Run completed
