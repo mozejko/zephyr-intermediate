@@ -1,0 +1,9 @@
+<testsuites>
+	<testsuite name="native_sim/native" timestamp="2026-10-09T19:46:01.759561" time="0.13" tests="2" failures="0" errors="0" skipped="0">
+		<properties>
+			<property name="version" value="v4.4.0" />
+		</properties>
+		<testcase classname="native_sim/native:homework.unit.temp_alarm" name="homework.unit.temp_alarm" time="0.11" />
+		<testcase classname="native_sim/native:homework.unit.temp_alarm.ordered" name="homework.unit.temp_alarm.ordered" time="0.02" />
+	</testsuite>
+</testsuites>
